@@ -31,6 +31,7 @@ class LoginTest:
         else:
             print("Login Failed")
 
+        time.sleep(5)
         driver.quit()
 
 test_case = LoginTest()
