@@ -13,11 +13,15 @@ class LoginTest(unittest.TestCase):
         driver = webdriver.Chrome()
         # driver.maximize_window()
         driver.implicitly_wait(5)
+
+        # Step 1: Go to url https://opensource-demo.orangehrmlive.com
         driver.get(base_url)
 
+        # Step 2: Login using username and password
         lp = LoginPage(driver)
         lp.login("Admin", "admin123")
 
+        # Step 3: 
 
         user_icon = driver.find_element(By.XPATH, "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
         if user_icon is not None:
