@@ -14,6 +14,8 @@ class LoginTest(unittest.TestCase):
         # driver.maximize_window()
         driver.implicitly_wait(5)
 
+
+
         # Step 1: Go to url https://opensource-demo.orangehrmlive.com
         driver.get(base_url)
 
@@ -21,14 +23,15 @@ class LoginTest(unittest.TestCase):
         lp = LoginPage(driver)
         lp.login("Admin", "admin123")
 
-        # Step 3: 
-
+        # Step 3: User icon should be displayed
         user_icon = driver.find_element(By.XPATH, "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
         if user_icon is not None:
             print("Login Successful")
         else:
             print("Login Failed")
 
+
+        # Step: Close the browser
         time.sleep(2)
         driver.quit()
 
