@@ -1,7 +1,14 @@
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
 
+# import this log if you want to print this class "LoginPage" in the logs
+# from utilities import custom_logger as cl
+# import logging
+# put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
+
 class LoginPage(SeleniumDriver): # inherit SeleniumDriver
+
+    # log = cl.custom_logger(logging.DEBUG)
 
     def __init__(self, driver):
         super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver) and providing the driver
@@ -11,6 +18,7 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
     _email_field = "//input[@name='username']"
     _password_field = "//input[@name='password']"
     _login_button = "//button[normalize-space()='Login']"
+
 
 
     # GET ELEMENT METHODS --------------------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+09/20/2024 07:36:07 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+09/20/2024 07:36:08 AM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+09/20/2024 07:36:08 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+09/20/2024 07:36:08 AM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+09/20/2024 07:36:08 AM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+09/20/2024 07:36:09 AM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
