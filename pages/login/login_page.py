@@ -18,6 +18,8 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
     _email_field = "//input[@name='username']"
     _password_field = "//input[@name='password']"
     _login_button = "//button[normalize-space()='Login']"
+    _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
+    _login_error_message = "//div[contains(@class, 'oxd-alert-content--error')]" # Invalid credentials
 
 
 
@@ -61,7 +63,31 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
         # login_button.click()
 
     def login(self, username, password):
+        self.clear_fields()
         self.enter_username(username)
         self.enter_password(password)
         self.click_login_button()
+
+    def verify_login_successful(self):
+        result = self.is_element_present(self._user_icon)
+        return result
+
+    def verify_login_failed(self):
+        result = self.get_text(self._login_error_message)
+        return result
+
+    # def verify_login_failed2(self):
+    #     result = self.get_text(self._login_error_message)
+    #     assert result == "Invalid credentialss"
+
+    # def verify_login_title(self):
+
+    # def logout(self):
+
+    def clear_fields(self):
+        email_field = self.get_element(self._email_field)
+        email_field.clear()
+        password_field = self.get_element(self._password_field)
+        password_field.clear()
+
 

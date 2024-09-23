@@ -137,3 +137,19 @@ class SeleniumDriver():
             self.log.info("Element not appeared on the web page")
             print_stack()
         return element
+
+
+
+
+
+    def get_text(self, locator, locator_type="xpath"):
+        try:
+            element = self.get_element(locator, locator_type)
+            text = element.text
+            # print("Get text on element with locator: " + locator + " locator Type: " + locator_type)
+            self.log.info("Get text on element with locator: " + locator + " locator Type: " + locator_type)
+            return text
+        except:
+            # print("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
+            self.log.info("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
+            print_stack()
