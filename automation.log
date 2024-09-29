@@ -1,10 +1,20 @@
-09/25/2024 09:21:39 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-09/25/2024 09:21:39 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-09/25/2024 09:21:39 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-09/25/2024 09:21:39 AM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
-09/25/2024 09:21:39 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-09/25/2024 09:21:39 AM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
-09/25/2024 09:21:39 AM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
-09/25/2024 09:21:40 AM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
-09/25/2024 09:21:40 AM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
-09/25/2024 09:21:40 AM - INFO: Element Found
+09/28/2024 11:40:00 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+09/28/2024 11:40:00 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+09/28/2024 11:40:00 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+09/28/2024 11:40:00 AM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+09/28/2024 11:40:00 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+09/28/2024 11:40:00 AM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+09/28/2024 11:40:00 AM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+09/28/2024 11:40:01 AM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+09/28/2024 11:40:01 AM - INFO: Element found with locator: //div[contains(@class, 'oxd-alert-content--error')] and locator_type: xpath
+09/28/2024 11:40:01 AM - INFO: Get text on element with locator: //div[contains(@class, 'oxd-alert-content--error')] locator Type: xpath
+09/28/2024 11:40:03 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+09/28/2024 11:40:03 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+09/28/2024 11:40:03 AM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+09/28/2024 11:40:03 AM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+09/28/2024 11:40:03 AM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+09/28/2024 11:40:03 AM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+09/28/2024 11:40:03 AM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+09/28/2024 11:40:03 AM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+09/28/2024 11:40:06 AM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+09/28/2024 11:40:06 AM - INFO: Element Found

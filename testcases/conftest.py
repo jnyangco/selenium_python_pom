@@ -1,6 +1,7 @@
 # Configuration Test -> common pytest method
 import pytest
 from selenium import webdriver
+from base.webdriverfactory import WebDriverFactory
 
 @pytest.fixture()
 def set_up(): # method level setup (default scope)
@@ -11,20 +12,25 @@ def set_up(): # method level setup (default scope)
 
 # scope -> "module" (default), "class", "session" ... # module setup (i.e: Open browser > Quit browser)
 @pytest.fixture(scope="class")
-def onetime_setup(request, browser, os_type):
+def onetime_setup(request, browser, os_type): # --browser from command line
     print("\n========== Run one time setup (conftest.py) ==========")  # before method
-    if browser.lower() == "firefox":
-        base_url = "https://opensource-demo.orangehrmlive.com"
-        driver = webdriver.Chrome()
-        driver.implicitly_wait(5)
-        driver.get(base_url)
-        print(">>> Browser = Firefox")
-    else:
-        base_url = "https://opensource-demo.orangehrmlive.com"
-        driver = webdriver.Chrome()
-        driver.implicitly_wait(5)
-        driver.get(base_url)
-        print(">>> Browser = Chrome")
+
+    # Get Driver Instance
+    wdf = WebDriverFactory(browser)
+    driver = wdf.getWebDriverInstance()
+
+    # if browser.lower() == "firefox":
+    #     base_url = "https://opensource-demo.orangehrmlive.com"
+    #     driver = webdriver.Firefox()
+    #     driver.implicitly_wait(5)
+    #     driver.get(base_url)
+    #     print(">>> Browser = Firefox")
+    # else:
+    #     base_url = "https://opensource-demo.orangehrmlive.com"
+    #     driver = webdriver.Chrome()
+    #     driver.implicitly_wait(5)
+    #     driver.get(base_url)
+    #     print(">>> Browser = Chrome")
 
     if request.cls is not None:
         request.cls.driver = driver  # add value to class attribute
