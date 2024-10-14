@@ -13,8 +13,8 @@ def custom_logger(log_level=logging.DEBUG): # default (if you don't specify upon
     logger.setLevel(logging.DEBUG)
 
     # file_handler = logging.FileHandler("{0}.log".format(logger_name), mode='w')  # write
-    # file_handler = logging.FileHandler("automation.log", mode='a')  # append
-    file_handler = logging.FileHandler("automation.log", mode='w')  # write
+    # file_handler = logging.FileHandler("automation.log", mode='a')  # mode='a' -> append, mode='w' -> write
+    file_handler = logging.FileHandler("automation.log", mode='a')  # write
     file_handler.setLevel(log_level)
 
     # name = classname "SeleniumDriver" - removed no need to print in log file

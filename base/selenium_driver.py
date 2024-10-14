@@ -18,8 +18,14 @@ class SeleniumDriver():
 
     log = cl.custom_logger(logging.DEBUG)
 
+    # like constructor
     def __init__(self, driver):
         self.driver = driver
+
+
+    # ===== METHODS BELOW ===== #
+    def get_title(self):
+        return self.driver.title
 
     def get_by_type(self, locator_type):
         locator_type = locator_type.lower()
@@ -66,6 +72,7 @@ class SeleniumDriver():
             # print("Cannot click on the element with locator: " + locator + " locator Type: " + locator_type)
             self.log.info("Cannot click on the element with locator: " + locator + " locator Type: " + locator_type)
             print_stack()
+
 
 
     def send_text(self, text, locator, locator_type="xpath"):

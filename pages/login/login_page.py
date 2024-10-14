@@ -91,3 +91,10 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
         password_field.clear()
 
 
+    def verify_page_title(self):
+        if self.get_title() == "OrangeHRM1":
+            return True
+        else:
+            return False
+
+

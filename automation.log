@@ -1,20 +1,63 @@
-10/13/2024 11:02:25 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-10/13/2024 11:02:25 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-10/13/2024 11:02:25 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-10/13/2024 11:02:25 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
-10/13/2024 11:02:25 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-10/13/2024 11:02:25 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
-10/13/2024 11:02:25 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
-10/13/2024 11:02:26 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
-10/13/2024 11:02:26 PM - INFO: Element found with locator: //div[contains(@class, 'oxd-alert-content--error')] and locator_type: xpath
-10/13/2024 11:02:26 PM - INFO: Get text on element with locator: //div[contains(@class, 'oxd-alert-content--error')] locator Type: xpath
-10/13/2024 11:02:28 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-10/13/2024 11:02:28 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-10/13/2024 11:02:28 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
-10/13/2024 11:02:28 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
-10/13/2024 11:02:28 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
-10/13/2024 11:02:28 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
-10/13/2024 11:02:28 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
-10/13/2024 11:02:28 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
-10/13/2024 11:02:29 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
-10/13/2024 11:02:29 PM - INFO: Element Found
+10/14/2024 01:18:57 PM - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/14/2024 01:18:57 PM - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/14/2024 01:18:57 PM - ERROR: test_valid_login ### TEST FAILED ###
+24 01:18:56 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:18:56 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/14/2024 01:18:56 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:18:56 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/14/2024 01:18:56 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/14/2024 01:18:57 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/14/2024 01:18:57 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/14/2024 01:18:57 PM - INFO: Element Found
+10/14/2024 01:19:48 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:19:48 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:19:48 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:19:48 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/14/2024 01:19:48 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:19:48 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/14/2024 01:19:48 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/14/2024 01:19:48 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/14/2024 01:19:48 PM - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/14/2024 01:19:49 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/14/2024 01:19:49 PM - INFO: Element Found
+10/14/2024 01:19:49 PM - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/14/2024 01:19:49 PM - ERROR: test_valid_login ### TEST FAILED ###
+10/14/2024 01:24:20 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:24:20 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:24:20 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:24:20 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/14/2024 01:24:20 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:24:20 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/14/2024 01:24:20 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/14/2024 01:24:21 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/14/2024 01:24:21 PM - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/14/2024 01:24:21 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/14/2024 01:24:21 PM - INFO: Element Found
+10/14/2024 01:24:21 PM - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/14/2024 01:24:21 PM - ERROR: test_valid_login ### TEST FAILED ###
+10/14/2024 01:25:19 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:25:19 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:25:19 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:25:19 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/14/2024 01:25:19 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:25:19 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/14/2024 01:25:19 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/14/2024 01:25:20 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/14/2024 01:25:20 PM - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/14/2024 01:25:20 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/14/2024 01:25:20 PM - INFO: Element Found
+10/14/2024 01:25:20 PM - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/14/2024 01:25:20 PM - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/14/2024 01:25:52 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:25:52 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:25:52 PM - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/14/2024 01:25:52 PM - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/14/2024 01:25:52 PM - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/14/2024 01:25:52 PM - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/14/2024 01:25:52 PM - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/14/2024 01:25:53 PM - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/14/2024 01:25:53 PM - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/14/2024 01:25:53 PM - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/14/2024 01:25:53 PM - INFO: Element Found
+10/14/2024 01:25:58 PM - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/14/2024 01:25:58 PM - ERROR: test_valid_login ### TEST CASE FAILED ###
