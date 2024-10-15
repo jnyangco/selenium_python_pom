@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait
@@ -9,6 +11,9 @@ from selenium.common.exceptions import *
 from utilities import custom_logger as cl
 import logging
 
+# for screenshots
+import time
+import os
 
 # Custom Class - wrapper for selenium webdriver
 # Every Page Class -> should inherit from SeleniumDriver()
@@ -24,6 +29,31 @@ class SeleniumDriver():
 
 
     # ===== METHODS BELOW ===== #
+    def screenshot(self, result_message):
+        """
+        Takes the screenshot of the current open web
+        """
+        print()
+        filename = result_message + "." + str(round(time.time() * 1000)) + ".png" #png is more compressed / smaller file
+        screenshot_directory = "../screenshots/"
+        relative_filename = screenshot_directory + filename  # this is the filepath
+
+        current_directory = os.path.dirname(__file__)
+
+        destination_file = os.path.join(current_directory, relative_filename)
+        destination_directory = os.path.join(current_directory, screenshot_directory)
+
+        try:
+            # if "screenshots" folder not exist, create a folder
+            if not os.path.exists(destination_directory):
+                os.makedirs(destination_directory)
+            self.driver.save_screenshot(destination_file)
+            self.log.info("Screenshot save to directory: " + destination_file)
+        except:
+            self.log.error("### Exception Occurred ###")
+            print_stack()
+
+
     def get_title(self):
         return self.driver.title
 

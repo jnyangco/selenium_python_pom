@@ -3,15 +3,16 @@ import unittest
 from selenium import webdriver
 from pages.login.login_page import LoginPage
 import pytest
-
 from utilities.report_status import ReportStatus
-
-
 # install "pytest-order" package
 
+import utilities.custom_logger as cl
+import logging
 
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 class LoginTest(unittest.TestCase):
+
+    log = cl.custom_logger(logging.INFO)
 
     @pytest.fixture(autouse=True)
     def class_setup(self, onetime_setup): # need to put here "onetime_setup" to access return value
@@ -34,7 +35,7 @@ class LoginTest(unittest.TestCase):
         # result2 = self.lp.verify_login_successful()
         # assert result2 == True
         result2 = self.lp.verify_login_successful()
-        time.sleep(5)
+        time.sleep(2)
         self.ts.markFinal("test_valid_login", result2, "Login successful")
 
 

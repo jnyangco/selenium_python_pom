@@ -17,10 +17,16 @@ def custom_logger(log_level=logging.DEBUG): # default (if you don't specify upon
     file_handler = logging.FileHandler("automation.log", mode='a')  # write
     file_handler.setLevel(log_level)
 
-    # name = classname "SeleniumDriver" - removed no need to print in log file
+    # name = classname "SeleniumDriver" - remove "- %(name)s" if you want to not print the classname in the log file
     # formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s',
     #                 datefmt='%m/%d/%Y %I:%M:%S %p')
+
+    # log with classname
     formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
+
+    # log without classname
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s',
                     datefmt='%m/%d/%Y %I:%M:%S %p')
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)

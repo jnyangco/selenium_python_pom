@@ -1,3 +1,4 @@
+# In the tutorial -> the python filename is "teststatus", classname is "TestStatus"
 """
 @package utilities
 
@@ -10,6 +11,8 @@ Example:
 import utilities.custom_logger as cl
 import logging
 from base.selenium_driver import SeleniumDriver
+from traceback import print_stack
+
 
 class ReportStatus(SeleniumDriver):
 
@@ -32,12 +35,16 @@ class ReportStatus(SeleniumDriver):
                 else:
                     self.resultList.append("FAIL")
                     self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+                    self.screenshot(resultMessage)
             else:
                 self.resultList.append("FAIL")
                 self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
+                self.screenshot(resultMessage)
         except:
             self.resultList.append("FAIL")
             self.log.error("### Exception Occurred !!!")
+            self.screenshot(resultMessage)
+            print_stack()
 
 
     # mark (assert) -> if Pass (append PASS to the list), if Fail (append FAIL to the list)

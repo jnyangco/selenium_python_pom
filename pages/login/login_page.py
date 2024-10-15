@@ -1,14 +1,16 @@
+import time
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
 
-# import this log if you want to print this class "LoginPage" in the logs
-# from utilities import custom_logger as cl
-# import logging
-# put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
+# -> import this log if you want to print this class "LoginPage" in the logs
+# -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
+from utilities import custom_logger as cl
+import logging
+
 
 class LoginPage(SeleniumDriver): # inherit SeleniumDriver
 
-    # log = cl.custom_logger(logging.DEBUG)
+    log = cl.custom_logger(logging.DEBUG)
 
     def __init__(self, driver):
         super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver) and providing the driver
@@ -92,6 +94,7 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
 
 
     def verify_page_title(self):
+        time.sleep(2)
         if self.get_title() == "OrangeHRM1":
             return True
         else:
