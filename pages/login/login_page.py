@@ -1,14 +1,17 @@
 import time
-from selenium.webdriver.common.by import By
-from base.selenium_driver import SeleniumDriver
+# from selenium.webdriver.common.by import By
+# from base.selenium_driver import SeleniumDriver
 
 # -> import this log if you want to print this class "LoginPage" in the logs
 # -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
 from utilities import custom_logger as cl
 import logging
 
+from base.basepage import BasePage
 
-class LoginPage(SeleniumDriver): # inherit SeleniumDriver
+
+# class LoginPage(SeleniumDriver): # inherit SeleniumDriver
+class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     log = cl.custom_logger(logging.DEBUG)
 
@@ -93,11 +96,12 @@ class LoginPage(SeleniumDriver): # inherit SeleniumDriver
         password_field.clear()
 
 
-    def verify_page_title(self):
-        time.sleep(2)
-        if self.get_title() == "OrangeHRM1":
-            return True
-        else:
-            return False
+    def verify_login_page_title(self):
+        # time.sleep(2)
+        # if self.get_title() == "OrangeHRM1":
+        #     return True
+        # else:
+        #     return False
+        return self.verifyPageTitle("OrangeHRM")
 
 

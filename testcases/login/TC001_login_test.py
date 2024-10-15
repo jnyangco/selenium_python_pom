@@ -28,13 +28,13 @@ class LoginTest(unittest.TestCase):
         # Step 2: Verify page title is correct
         # result1 = self.lp.verify_page_title()
         # assert result1 == True
-        result1 = self.lp.verify_page_title()
+        result1 = self.lp.verify_login_page_title()  # result1 = True/False
         self.ts.mark(result1, "Title verified")
 
         # Step 3: User icon should be displayed
         # result2 = self.lp.verify_login_successful()
         # assert result2 == True
-        result2 = self.lp.verify_login_successful()
+        result2 = self.lp.verify_login_successful()  # result2 = True/False
         time.sleep(2)
         self.ts.markFinal("test_valid_login", result2, "Login successful")
 

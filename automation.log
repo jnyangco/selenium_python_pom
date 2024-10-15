@@ -12,3 +12,95 @@
 10/15/2024 06:38:10 AM - LoginPage - INFO: Element Found
 10/15/2024 06:38:12 AM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
 10/15/2024 06:38:12 AM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:26:53 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:26:53 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:26:54 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:26:54 PM - LoginPage - ERROR: Failed to get page title
+10/15/2024 01:26:54 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/15/2024 01:26:54 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Title verified.1729013214668.png
+10/15/2024 01:26:54 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:26:54 PM - LoginPage - INFO: Element Found
+10/15/2024 01:26:56 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:26:56 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:27:44 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:27:44 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:27:44 PM - LoginPage - ERROR: Failed to get page title
+10/15/2024 01:27:45 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/15/2024 01:27:45 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Title verified.1729013265003.png
+10/15/2024 01:27:45 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:27:45 PM - LoginPage - INFO: Element Found
+10/15/2024 01:27:47 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:27:47 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:28:05 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:28:05 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:28:06 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:28:06 PM - LoginPage - ERROR: Failed to get page title
+10/15/2024 01:28:06 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/15/2024 01:28:06 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Title verified.1729013286334.png
+10/15/2024 01:28:06 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:28:06 PM - LoginPage - INFO: Element Found
+10/15/2024 01:28:08 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:28:08 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:29:43 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:29:43 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:29:44 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:29:44 PM - LoginPage - ERROR: Failed to get page title
+10/15/2024 01:29:44 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/15/2024 01:29:44 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Title verified.1729013384546.png
+10/15/2024 01:29:44 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:29:44 PM - LoginPage - INFO: Element Found
+10/15/2024 01:29:46 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:29:46 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:31:10 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:31:10 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:31:10 PM - Util - INFO: Wait :: '4' seconds for 
+10/15/2024 01:31:14 PM - LoginPage - ERROR: Failed to get page title
+10/15/2024 01:31:14 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Title verified
+10/15/2024 01:31:15 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Title verified.1729013474946.png
+10/15/2024 01:31:15 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:31:15 PM - LoginPage - INFO: Element Found
+10/15/2024 01:31:17 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:31:17 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+10/15/2024 01:32:20 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 01:32:20 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 01:32:21 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 01:32:21 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 01:32:21 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 01:32:21 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 01:32:21 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 01:32:21 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 01:32:21 PM - LoginPage - INFO: Element Found
+10/15/2024 01:32:23 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 01:32:23 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
