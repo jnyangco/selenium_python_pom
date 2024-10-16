@@ -16,7 +16,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     log = cl.custom_logger(logging.DEBUG)
 
     def __init__(self, driver):
-        super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver) and providing the driver
+        super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver/BasePage???) and providing the driver
         self.driver = driver
 
     # Locators

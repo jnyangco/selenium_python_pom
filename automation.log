@@ -120,3 +120,153 @@
 10/15/2024 10:06:42 PM - LoginPage - INFO: Element Found
 10/15/2024 10:06:44 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
 10/15/2024 10:06:44 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:20:04 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:20:04 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:20:04 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:20:04 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:20:04 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:20:05 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:20:05 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:20:05 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:20:05 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:20:05 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:20:05 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:20:05 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:20:05 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 11:20:05 PM - LoginPage - INFO: Element present with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7']locator_type: xpath
+10/15/2024 11:20:07 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 11:20:07 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:22:35 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:22:35 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:22:36 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:22:36 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:22:36 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:22:36 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:22:36 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:22:36 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 11:22:36 PM - LoginPage - INFO: Element present with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7']locator_type: xpath
+10/15/2024 11:22:38 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 11:22:38 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:32:26 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:32:26 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:32:26 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:32:27 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:32:27 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:32:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:32:27 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:32:27 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 11:32:27 PM - LoginPage - INFO: Element present with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7']locator_type: xpath
+10/15/2024 11:32:29 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 11:32:29 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:33:38 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:33:38 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:33:39 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:33:39 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:33:39 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:33:39 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:33:39 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:33:39 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 11:33:39 PM - LoginPage - INFO: Element present with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7']locator_type: xpath
+10/15/2024 11:33:41 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 11:33:41 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:38:38 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:38:38 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:38:39 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:38:39 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:38:39 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:38:39 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:38:39 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:38:40 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 11:38:40 PM - LoginPage - INFO: Element present with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7']locator_type: xpath
+10/15/2024 11:38:42 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 11:38:42 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 11:39:07 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:39:07 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:39:08 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:39:08 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:39:08 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:39:08 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:39:08 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:39:26 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:39:26 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:39:26 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:39:26 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:39:26 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:39:26 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:40:03 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:40:03 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:40:04 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:40:04 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:40:04 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 11:40:04 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 11:40:04 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 11:41:33 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:41:33 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:41:34 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:41:53 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:41:54 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:41:59 PM - DashboardPage - INFO: Element found with locator: //input[@placeholder='Search'] and locator_type: xpath
+10/15/2024 11:41:59 PM - DashboardPage - INFO: Send text on element with locator: //input[@placeholder='Search'] locator Type: xpath
+10/15/2024 11:41:59 PM - DashboardPage - INFO: Element found with locator: //div[@class='oxd-sidepanel-body']/ul[1] and locator_type: xpath
+10/15/2024 11:41:59 PM - DashboardPage - INFO: Clicked on element with locator: //div[@class='oxd-sidepanel-body']/ul[1] locator Type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 11:43:39 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 11:43:40 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 11:43:45 PM - DashboardPage - INFO: Element found with locator: //input[@placeholder='Search'] and locator_type: xpath
+10/15/2024 11:43:45 PM - DashboardPage - INFO: Send text on element with locator: //input[@placeholder='Search'] locator Type: xpath
+10/15/2024 11:43:45 PM - Util - INFO: Wait :: '4' seconds for 
+10/15/2024 11:43:49 PM - DashboardPage - INFO: Element found with locator: //div[@class='oxd-sidepanel-body']/ul[1] and locator_type: xpath
+10/15/2024 11:43:49 PM - DashboardPage - INFO: Clicked on element with locator: //div[@class='oxd-sidepanel-body']/ul[1] locator Type: xpath
+10/15/2024 11:43:49 PM - Util - INFO: Wait :: '4' seconds for 
