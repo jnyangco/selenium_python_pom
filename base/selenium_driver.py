@@ -92,9 +92,33 @@ class SeleniumDriver():
         return element
 
 
-    def element_click(self, locator, locator_type="xpath"):
+    def get_element_list(self, locator, locator_type="id"):
+        """
+        NEW METHOD
+        Get list of elements
+        """
+        element = None
         try:
-            element = self.get_element(locator, locator_type)
+            locator_type = locator_type.lower()
+            by_type = self.get_by_type(locator_type)
+            element = self.driver.find_elements(by_type, locator)
+            self.log.info("Element list found with locator: " + locator +
+                          " and  locatorType: " + locator_type)
+        except:
+            self.log.info("Element list not found with locator: " + locator +
+                          " and  locatorType: " + locator_type)
+        return element
+
+
+    # def element_click(self, locator, locator_type="xpath"):
+    def element_click(self, locator="", locator_type="xpath", element=None):
+        """
+        Click on an element -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.get_element(locator, locator_type)
             element.click()
             # print("Clicked on element with locator: " + locator + " locator Type: " + locator_type)
             self.log.info("Clicked on element with locator: " + locator + " locator Type: " + locator_type)
@@ -104,10 +128,17 @@ class SeleniumDriver():
             print_stack()
 
 
-
-    def send_text(self, text, locator, locator_type="xpath"):
+    # cannot use "send_keys" -> it is existing function
+    # original from tutorial -> "sendKeys"
+    # def send_text(self, text, locator, locator_type="xpath"):
+    def send_text(self, text, locator="", locator_type="xpath", element=None):
+        """
+        Send keys to an element -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
         try:
-            element = self.get_element(locator, locator_type)
+            if locator:  # this means if locator is not empty
+                element = self.get_element(locator, locator_type)
             element.send_keys(text)
             # print("Send text on element with locator: " + locator + " locator Type: " + locator_type)
             self.log.info("Send text on element with locator: " + locator + " locator Type: " + locator_type)
@@ -117,22 +148,92 @@ class SeleniumDriver():
             print_stack()
 
 
-    def is_element_present(self, locator, locator_type="xpath"):
+    # def get_text(self, locator, locator_type="xpath"):
+    #     try:
+    #         element = self.get_element(locator, locator_type)
+    #         text = element.text
+    #         # print("Get text on element with locator: " + locator + " locator Type: " + locator_type)
+    #         self.log.info("Get text on element with locator: " + locator + " locator Type: " + locator_type)
+    #         return text
+    #     except:
+    #         # print("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
+    #         self.log.info("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
+    #         print_stack()
+
+
+    def get_text(self, locator="", locator_type="id", element=None, info=""):
+        """
+        NEW METHOD
+        Get 'Text' on an element
+        Either provide element or a combination of locator and locatorType
+        """
         try:
-            # element = self.driver.find_element(by_type, locator)
-            element = self.get_element(locator, locator_type)
+            if locator: # This means if locator is not empty
+                self.log.debug("In locator condition")
+                element = self.get_element(locator, locator_type)
+            self.log.debug("Before finding text")
+            text = element.text
+            self.log.debug("After finding element, size is: " + str(len(text)))
+            if len(text) == 0:
+                text = element.get_attribute("innerText")
+            if len(text) != 0:
+                self.log.info("Getting text on element :: " +  info)
+                self.log.info("The text is :: '" + text + "'")
+                text = text.strip()
+        except:
+            self.log.error("Failed to get text on element " + info)
+            print_stack()
+            text = None
+        return text
+
+
+    # def is_element_present(self, locator, locator_type="xpath"):
+    def is_element_present(self, locator="", locator_type="xpath", element=None):
+        """
+        Check if element is present -> MODIFIED
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator:  # This means if locator is not empty
+                # element = self.driver.find_element(by_type, locator)
+                element = self.get_element(locator, locator_type)
             if element is not None:
                 # print("Element Found")
-                self.log.info("Element Found")
+                # self.log.info("Element Found")
+                self.log.info("Element present with locator: " + locator + "locator_type: " + locator_type)
                 return True
             else:
                 # print("Element not found")
-                self.log.info("Element not found")
+                # self.log.info("Element not found")
+                self.log.info("Element NOT present with locator: " + locator + "locator_type: " + locator_type)
                 return False
         except:
             # print("Element not found")
             self.log.info("Element not found")
             return False
+
+    def is_element_displayed(self, locator="", locator_type="id", element=None):
+        """
+        NEW METHOD
+        Check if element is displayed
+        Either provide element or a combination of locator and locatorType
+        """
+        is_displayed = False
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.get_element(locator, locator_type)
+            if element is not None:
+                is_displayed = element.is_displayed()
+                self.log.info("Element is displayed with locator: " + locator +
+                              " locatorType: " + locator_type)
+            else:
+                self.log.info("Element not displayed with locator: " + locator +
+                              " locatorType: " + locator_type)
+            return is_displayed
+        except:
+            print("Element not found")
+            return False
+
 
     # check list of elements
     def element_presence_check(self, locator, by_type):
@@ -176,17 +277,14 @@ class SeleniumDriver():
         return element
 
 
+    def web_scroll(self, direction="down"):
+        """
+        NEW METHOD
+        """
+        if direction == "up":
+            # Scroll Up
+            self.driver.execute_script("window.scrollBy(0, -1000);")
 
-
-
-    def get_text(self, locator, locator_type="xpath"):
-        try:
-            element = self.get_element(locator, locator_type)
-            text = element.text
-            # print("Get text on element with locator: " + locator + " locator Type: " + locator_type)
-            self.log.info("Get text on element with locator: " + locator + " locator Type: " + locator_type)
-            return text
-        except:
-            # print("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
-            self.log.info("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
-            print_stack()
+        if direction == "down":
+            # Scroll Down
+            self.driver.execute_script("window.scrollBy(0, 1000);")

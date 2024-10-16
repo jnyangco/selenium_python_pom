@@ -104,3 +104,19 @@
 10/15/2024 01:32:21 PM - LoginPage - INFO: Element Found
 10/15/2024 01:32:23 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
 10/15/2024 01:32:23 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+10/15/2024 10:06:41 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Element found with locator: //input[@name='username'] and locator_type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Send text on element with locator: //input[@name='username'] locator Type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Element found with locator: //input[@name='password'] and locator_type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Send text on element with locator: //input[@name='password'] locator Type: xpath
+10/15/2024 10:06:41 PM - LoginPage - INFO: Element found with locator: //button[normalize-space()='Login'] and locator_type: xpath
+10/15/2024 10:06:42 PM - LoginPage - INFO: Clicked on element with locator: //button[normalize-space()='Login'] locator Type: xpath
+10/15/2024 10:06:42 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/15/2024 10:06:42 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/15/2024 10:06:42 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/15/2024 10:06:42 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/15/2024 10:06:42 PM - LoginPage - INFO: Element found with locator: //img[@src='/web/index.php/pim/viewPhoto/empNumber/7'] and locator_type: xpath
+10/15/2024 10:06:42 PM - LoginPage - INFO: Element Found
+10/15/2024 10:06:44 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/15/2024 10:06:44 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###

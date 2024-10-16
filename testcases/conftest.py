@@ -2,6 +2,7 @@
 import pytest
 from selenium import webdriver
 from base.webdriverfactory import WebDriverFactory
+# from pages.login.login_page import LoginPage
 
 @pytest.fixture()
 def set_up(): # method level setup (default scope)
@@ -18,6 +19,10 @@ def onetime_setup(request, browser, os_type): # --browser from command line
     # Get Driver Instance
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
+
+    # include login to application by default
+    # lp = LoginPage(driver)
+    # lp.login("test@email.com", "abc")
 
     # if browser.lower() == "firefox":
     #     base_url = "https://opensource-demo.orangehrmlive.com"
