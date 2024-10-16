@@ -30,18 +30,18 @@ class BasePage(SeleniumDriver):
         self.util = Util()
 
 
-    def verifyPageTitle(self, titleToVerify):
+    def verify_page_title(self, title_to_verify):
         """
         Verify the page Title
 
         Parameters:
-            titleToVerify: Title on the page that needs to be verified
+            title_to_verify: Title on the page that needs to be verified
         """
         try:
-            actualTitle = self.get_title()
-            print(">>> actual page title = {}".format(actualTitle))
-            print(">>> expected page title = {}".format(titleToVerify))
-            return self.util.verifyTextContains(actualTitle, titleToVerify)
+            actual_title = self.get_title()
+            print(">>> actual page title = {}".format(actual_title))
+            print(">>> expected page title = {}".format(title_to_verify))
+            return self.util.verify_text_contains(actual_title, title_to_verify)
         except:
             self.log.error("Failed to get page title")
             print_stack()

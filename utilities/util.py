@@ -30,7 +30,7 @@ class Util(object):
             traceback.print_stack()
 
 
-    def getAlphaNumeric(self, length, type='letters'):
+    def get_alpha_numeric(self, length, type='letters'):
         """
         Get random string of characters
 
@@ -52,40 +52,42 @@ class Util(object):
             case = string.ascii_letters
         return alpha_num.join(random.choice(case) for i in range(length))
 
+
     # another wrapper method of getAlphaNumeric
-    def getUniqueName(self, charCount=10):
+    def get_unique_name(self, char_count=10):
         """
         Get a unique name
         """
-        return self.getAlphaNumeric(charCount, 'lower')
+        return self.get_alpha_numeric(char_count, 'lower')
+
 
     # another wrapper method of getAlphaNumeric
-    def getUniqueNameList(self, listSize=5, itemLength=None):
+    def get_unique_name_list(self, list=5, item_length=None):
         """
         Get a list of valid email ids
 
         Parameters:
-            listSize: Number of names. Default is 5 names in a list
-            itemLength: It should be a list containing number of items equal to the listSize
+            list: Number of names. Default is 5 names in a list
+            item_length: It should be a list containing number of items equal to the listSize
                         This determines the length of the each item in the list -> [1, 2, 3, 4, 5]
         """
-        nameList = []
-        for i in range(0, listSize):
-            nameList.append(self.getUniqueName(itemLength[i]))
-        return nameList
+        name_list = []
+        for i in range(0, list):
+            name_list.append(self.get_unique_name(item_length[i]))
+        return name_list
 
 
-    def verifyTextContains(self, actualText, expectedText):
+    def verify_text_contains(self, actual_text, expected_text):
         """
         Verify actual text contains expected text string
 
         Parameters:
-            expectedList: Expected Text
-            actualList: Actual Text
+            actual_text: Actual Text
+            expected_text: Expected Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
-        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
-        if expectedText.lower() in actualText.lower():
+        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
+        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+        if expected_text.lower() in actual_text.lower():
             self.log.info("### VERIFICATION CONTAINS !!!")
             return True
         else:
@@ -93,17 +95,17 @@ class Util(object):
             return False
 
 
-    def verifyTextMatch(self, actualText, expectedText):
+    def verify_text_match(self, actual_text, expected_text):
         """
         Verify text match
 
         Parameters:
-            expectedList: Expected Text
-            actualList: Actual Text
+            actual_text: Actual Text
+            expected_text: Expected Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
-        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
-        if actualText.lower() == expectedText.lower():
+        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
+        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+        if actual_text.lower() == expected_text.lower():
             self.log.info("### VERIFICATION MATCHED !!!")
             return True
         else:
@@ -111,28 +113,28 @@ class Util(object):
             return False
 
 
-    def verifyListMatch(self, expectedList, actualList):
+    def verify_list_match(self, expected_list, actual_list):
         """
         Verify two list matches
 
         Parameters:
-            expectedList: Expected List
-            actualList: Actual List
+            expected_list: Expected List
+            actual_list: Actual List
         """
-        return set(expectedList) == set(actualList)
+        return set(expected_list) == set(actual_list)
 
 
-    def verifyListContains(self, expectedList, actualList):
+    def verify_list_contains(self, expected_list, actual_list):
         """
         Verify actual list contains elements of expected list
 
         Parameters:
-            expectedList: Expected List
-            actualList: Actual List
+            expected_list: Expected List
+            actual_list: Actual List
         """
-        length = len(expectedList)
+        length = len(expected_list)
         for i in range(0, length):
-            if expectedList[i] not in actualList:
+            if expected_list[i] not in actual_list:
                 return False
         else:
             return True

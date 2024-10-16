@@ -102,6 +102,6 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         #     return True
         # else:
         #     return False
-        return self.verifyPageTitle("OrangeHRM")
+        return self.verify_page_title("OrangeHRM")
 
 
