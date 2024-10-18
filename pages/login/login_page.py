@@ -1,5 +1,6 @@
 import time
-# from selenium.webdriver.common.by import By
+
+from selenium.webdriver.common.by import By
 # from base.selenium_driver import SeleniumDriver
 
 # -> import this log if you want to print this class "LoginPage" in the logs
@@ -20,12 +21,12 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.driver = driver
 
     # Locators
-    _email_field = "//input[@name='username']"
-    _password_field = "//input[@name='password']"
-    _login_button = "//button[normalize-space()='Login']"
+    _email_field = (By.XPATH, "//input[@name='username']")
+    _password_field = (By.XPATH, "//input[@name='password']")
+    _login_button = (By.XPATH, "//button[normalize-space()='Login']")
     # _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
-    _login_error_message = "//div[contains(@class, 'oxd-alert-content--error')]" # Invalid credentials
-    _login_logo = "//div[@class='orangehrm-login-branding']/img"
+    _login_error_message = (By.XPATH, "//div[contains(@class, 'oxd-alert-content--error')]") # Invalid credentials
+    _login_logo = (By.XPATH, "//div[@class='orangehrm-login-branding']/img")
 
 
 
@@ -85,9 +86,10 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     def login(self, username, password):
         # self.driver.get("www.google.com")  # not working here
-        self.clear_fields()
+        # self.clear_fields()
         self.enter_username(username)
         self.enter_password(password)
+        time.sleep(2)
         self.click_login_button()
 
 
@@ -107,6 +109,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         print(f">>> actual_error_message = {actual_error_message}")
         print(f">>> expected_error_message = {expected_error_message}")
         self.util.wait(2, "Waiting for the error message")
+
         if actual_error_message == expected_error_message:
             print("RETURN TRUE")
             return True
@@ -139,8 +142,13 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         #     return False
         return self.verify_page_title("OrangeHRM")
 
+
     def verify_user_is_logged_out(self):
+        element = self.wait_for_element(self._login_logo, poll_frequency=1)
         self.util.wait(2)
-        return self.is_element_present(self._login_logo)
+        if element is not None:
+            return True
+        else:
+            return False
 
 

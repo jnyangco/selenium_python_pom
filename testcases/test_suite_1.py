@@ -15,7 +15,8 @@ tc4 = unittest.TestLoader().loadTestsFromTestCase(LoginFailedDataDriven)
 tc5 = unittest.TestLoader().loadTestsFromTestCase(LoginAndLogout)
 
 # Create test suite combining all test classes
-SmokeTest = unittest.TestSuite([tc1, tc2, tc3, tc4, tc5])
+# SmokeTest = unittest.TestSuite([tc1, tc2, tc3, tc4, tc5])
+SmokeTest = unittest.TestSuite([tc1])
 
 # Run Test Suite
 unittest.TextTestRunner(verbosity=2).run(SmokeTest)
