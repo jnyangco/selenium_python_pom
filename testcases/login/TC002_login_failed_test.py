@@ -21,6 +21,7 @@ class LoginFailed(unittest.TestCase):
 
         # Step 2: Login using username and password
         lp = LoginPage(driver)
+        self.lp.open_orangehrm()
         lp.login("Admin", "admin1234")
 
         # Step 3: User icon should be displayed

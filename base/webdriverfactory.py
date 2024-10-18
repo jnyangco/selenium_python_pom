@@ -33,6 +33,7 @@ class WebDriverFactory():
         PREFERRED: Set the path on the machine where browser will be executed
     """
 
+
     def getWebDriverInstance(self):
         """
        Get WebDriver Instance based on the browser configuration
@@ -62,5 +63,5 @@ class WebDriverFactory():
         driver.maximize_window()
         
         # Loading browser with App URL
-        driver.get(baseURL)
+        # driver.get(baseURL)
         return driver

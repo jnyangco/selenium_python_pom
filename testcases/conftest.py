@@ -1,3 +1,4 @@
+# conftest.py -> should be placed on testcase folder level
 # Configuration Test -> common pytest method
 import pytest
 from selenium import webdriver

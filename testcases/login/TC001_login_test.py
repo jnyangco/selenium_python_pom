@@ -23,9 +23,11 @@ class LoginTest(unittest.TestCase):
         self.ts = ReportStatus(self.driver)
 
 
-    @pytest.mark.order(2)
+    @pytest.mark.order(1)
     def test_valid_login(self):
         # Step 1: Login using username and password
+        self.lp.open_orangehrm()
+        # self.lp.launch_orangehrm()
         self.lp.login("Admin", "admin123")
 
         # Step 2: Verify page title is correct

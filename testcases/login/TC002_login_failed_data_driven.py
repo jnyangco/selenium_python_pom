@@ -29,6 +29,7 @@ class LoginFailedDataDriven(unittest.TestCase):
     @unpack  # this will unpack the data/parameter below
     def test_invalid_login(self, username, password, error_message):
         # Step 1: Login using username and password
+        self.lp.open_orangehrm()
         self.lp.login(username, password)
 
         # Step 2: Verify error message "Invalid credentials" is displayed

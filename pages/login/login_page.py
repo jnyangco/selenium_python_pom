@@ -69,8 +69,21 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # login_button = self.driver.find_element(By.XPATH, "//button[normalize-space()='Login']")
         # login_button.click()
 
+    def open_orangehrm(self):
+        self.open_url("https://opensource-demo.orangehrmlive.com")
+
+    def open_publication(self):
+        self.open_url("https://www.publication-test.com")
+
+    def open_cms(self):
+        self.open_url("https://www.cms-test.com")
+
+    def open_griffin(self):
+        self.open_url("https://www.griffin-test.com")
+
 
     def login(self, username, password):
+        # self.driver.get("www.google.com")  # not working here
         self.clear_fields()
         self.enter_username(username)
         self.enter_password(password)

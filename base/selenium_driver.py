@@ -19,7 +19,7 @@ import os
 # Every Page Class -> should inherit from SeleniumDriver()
 # i.e: LoginPage(SeleniumDriver)
 
-class SeleniumDriver():
+class SeleniumDriver:
 
     log = cl.custom_logger(logging.DEBUG)
 
@@ -29,6 +29,9 @@ class SeleniumDriver():
 
 
     # ===== METHODS BELOW ===== #
+    def open_url(self, base_url):
+        self.driver.get(base_url)
+
     def screenshot(self, result_message):
         """
         Takes the screenshot of the current open web
