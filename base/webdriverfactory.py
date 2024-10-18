@@ -6,7 +6,7 @@ It creates a webdriver instance based on browser configurations
 
 Example:
     wdf = WebDriverFactory(browser)
-    wdf.getWebDriverInstance()
+    wdf.get_webdriver_instance()
 """
 import traceback
 from selenium import webdriver
@@ -34,7 +34,7 @@ class WebDriverFactory():
     """
 
 
-    def getWebDriverInstance(self):
+    def get_web_driver_instance(self):
         """
        Get WebDriver Instance based on the browser configuration
 
@@ -43,7 +43,8 @@ class WebDriverFactory():
         """
 
         # baseURL = "https://letskodeit.teachable.com/"
-        baseURL = "https://opensource-demo.orangehrmlive.com"
+        # baseURL = "https://opensource-demo.orangehrmlive.com"
+
         if self.browser == "iexplorer":
             # Set ie driver
             driver = webdriver.Ie()

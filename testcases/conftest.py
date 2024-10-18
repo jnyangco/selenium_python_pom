@@ -27,7 +27,7 @@ def onetime_setup(request, browser, os_type): # --browser from command line
 
     # Get Driver Instance
     wdf = WebDriverFactory(browser)
-    driver = wdf.getWebDriverInstance()
+    driver = wdf.get_web_driver_instance()
 
     # include login to application by default
     # lp = LoginPage(driver)

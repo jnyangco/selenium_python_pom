@@ -41,7 +41,7 @@ class LoginTest(unittest.TestCase):
         # assert result2 == True
         result2 = self.lp.verify_login_successful()  # result2 = True/False
         time.sleep(2)
-        self.ts.markFinal("test_valid_login", result2, "Login successful")
+        self.ts.mark_final("test_valid_login", result2, "Login successful")
 
 
 

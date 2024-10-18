@@ -34,6 +34,6 @@ class LoginTestDataDriven(unittest.TestCase):
 
         # Step 2: Verify error message "Invalid credentials" is displayed
         result = self.lp.verify_login_successful()
-        self.ts.markFinal("test_valid_login", result, "Login verified")
+        self.ts.mark_final("test_valid_login", result, "Login verified")
 
 
