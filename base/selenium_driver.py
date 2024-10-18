@@ -92,7 +92,7 @@ class SeleniumDriver():
         return element
 
 
-    def get_element_list(self, locator, locator_type="id"):
+    def get_element_list(self, locator, locator_type="xpath"):
         """
         NEW METHOD
         Get list of elements
@@ -161,7 +161,7 @@ class SeleniumDriver():
     #         print_stack()
 
 
-    def get_text(self, locator="", locator_type="id", element=None, info=""):
+    def get_text(self, locator="", locator_type="xpath", element=None, info=""):
         """
         NEW METHOD
         Get 'Text' on an element
@@ -212,7 +212,7 @@ class SeleniumDriver():
             self.log.info("Element not found")
             return False
 
-    def is_element_displayed(self, locator="", locator_type="id", element=None):
+    def is_element_displayed(self, locator="", locator_type="xpath", element=None):
         """
         NEW METHOD
         Check if element is displayed

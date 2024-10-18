@@ -46,7 +46,7 @@ class ReportStatus(SeleniumDriver):
             self.screenshot(resultMessage)
             print_stack()
 
-
+    # CHECK IF TRUE or FALSE
     # mark (assert) -> if Pass (append PASS to the list), if Fail (append FAIL to the list)
     def mark(self, result, resultMessage):
         """
@@ -54,7 +54,7 @@ class ReportStatus(SeleniumDriver):
         """
         self.setResult(result, resultMessage)
 
-
+    # CHECK if TRUE or FALSE
     def markFinal(self, testName, result, resultMessage):
         """
         Mark the final result of the verification point in a test case

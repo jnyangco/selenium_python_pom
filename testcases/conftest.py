@@ -12,7 +12,15 @@ def set_up(): # method level setup (default scope)
 
 
 # scope -> "module" (default), "class", "session" ... # module setup (i.e: Open browser > Quit browser)
-@pytest.fixture(scope="class")
+# SCOPE:
+# scope=session
+# scope=package
+# scope=module
+# scope=class
+# scope=function
+#
+# @pytest.fixture(scope="class") # default from tutorial
+@pytest.fixture(scope="function")
 def onetime_setup(request, browser, os_type): # --browser from command line
     print("\n========== Run one time setup (conftest.py) ==========")  # before method
 

@@ -45,9 +45,11 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # self.get_username_field().send_keys(email)
         self.send_text(email, self._email_field) # locator_type optional -> default value is xpath
 
+
     def enter_password(self, password):
         # self.get_password_field().send_keys(password)
         self.send_text(password, self._password_field)
+
 
     def click_login_button(self):
         # self.get_login_button().click()
@@ -67,19 +69,37 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # login_button = self.driver.find_element(By.XPATH, "//button[normalize-space()='Login']")
         # login_button.click()
 
+
     def login(self, username, password):
         self.clear_fields()
         self.enter_username(username)
         self.enter_password(password)
         self.click_login_button()
 
+
     def verify_login_successful(self):
         result = self.is_element_present(self._user_icon)
+        self.util.sleep(2)
         return result
+
 
     def verify_login_failed(self):
         result = self.get_text(self._login_error_message)
         return result
+
+
+    def verify_login_error_message(self, expected_error_message):
+        actual_error_message = self.get_text(self._login_error_message)
+        print(f">>> actual_error_message = {actual_error_message}")
+        print(f">>> expected_error_message = {expected_error_message}")
+        self.util.sleep(2, "Waiting for the error message")
+        if actual_error_message == expected_error_message:
+            print("RETURN TRUE")
+            return True
+        else:
+            print("RETURN FALSE")
+            return False
+
 
     # def verify_login_failed2(self):
     #     result = self.get_text(self._login_error_message)
@@ -88,6 +108,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     # def verify_login_title(self):
 
     # def logout(self):
+
 
     def clear_fields(self):
         email_field = self.get_element(self._email_field)

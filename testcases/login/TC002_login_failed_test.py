@@ -5,7 +5,7 @@ from selenium import webdriver
 # from selenium.webdriver.common.by import By
 from pages.login.login_page import LoginPage
 
-class LoginTest(unittest.TestCase):
+class LoginFailed(unittest.TestCase):
 
     def test_invalid_login(self):
         # base_url = "https://letskodeit.teachable.com"
