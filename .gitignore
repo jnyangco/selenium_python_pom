@@ -1,0 +1,15 @@
+# Screenshot Files
+/screenshots
+
+# IDE Specific
+.DS_Store
+
+# Pycharm Cache
+base/__pycache__/
+pages/__pycache__/
+pages/dashboard/__pycache__/
+pages/login/__pycache__/
+testcases/__pycache__/
+testcases/dashboard/__pycache__/
+testcases/login/__pycache__/
+utilities/__pycache__/
