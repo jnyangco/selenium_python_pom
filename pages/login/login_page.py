@@ -25,7 +25,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     _login_button = "//button[normalize-space()='Login']"
     # _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
     _login_error_message = "//div[contains(@class, 'oxd-alert-content--error')]" # Invalid credentials
-    _login_logo = "//div[@class='orangehrm-login-branding']/img[2]"
+    _login_logo = "//div[@class='orangehrm-login-branding']/img"
 
 
 

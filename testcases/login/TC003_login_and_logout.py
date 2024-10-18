@@ -26,7 +26,7 @@ class LoginAndLogout(unittest.TestCase):
 
 
     @pytest.mark.order(1)
-    def test_valid_login_and_logout(self):
+    def test_login_and_logout(self):
         # Step 1: Login using username and password
         self.lp.open_orangehrm()
         self.lp.login("Admin", "admin123")
