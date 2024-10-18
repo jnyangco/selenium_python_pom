@@ -17,6 +17,8 @@ class DashboardPage(BasePage):
     _search_textbox = "//input[@placeholder='Search']"
     _first_menu_result = "//div[@class='oxd-sidepanel-body']/ul[1]"
     _add_button = "//button[normalize-space()='Add']"
+    _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
+    _logout_option = "//a[text()='Logout']"
 
 
     # ACTION ---------------------------------------------------------------------------------------------------------
@@ -26,11 +28,29 @@ class DashboardPage(BasePage):
     def click_first_menu_result(self):
         self.element_click(self._first_menu_result)
 
+    def click_user_icon(self):
+        self.element_click(self._user_icon)
+
+    def click_logout_option(self):
+        self.element_click(self._logout_option)
+
 
     # METHODS---------------------------------------------------------------------------------------------------------
     def search_menu(self, search_text):
         self.enter_search_text(search_text)
-        self.util.sleep(4)
+        self.util.wait(4)
         self.click_first_menu_result()
-        self.util.sleep(4)
+        self.util.wait(4)
+
+
+    def verify_login_successful(self):
+        result = self.is_element_present(self._user_icon)
+        self.util.wait(2)
+        return result
+
+
+    def logout(self):
+        self.click_user_icon()
+        self.util.wait(2)
+        self.click_logout_option()
 

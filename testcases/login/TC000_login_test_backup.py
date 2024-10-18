@@ -4,6 +4,7 @@ import unittest
 from selenium import webdriver
 # from selenium.webdriver.common.by import By
 from pages.login.login_page import LoginPage
+from pages.dashboard.dashboard_page import DashboardPage
 
 class LoginTest(unittest.TestCase):
 
@@ -24,7 +25,8 @@ class LoginTest(unittest.TestCase):
         lp.login("Admin", "admin123")
 
         # Step 3: User icon should be displayed
-        result = lp.verify_login_successful()
+        dp = DashboardPage
+        result = dp.verify_login_successful()
         assert result == True
 
 

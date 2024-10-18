@@ -23,8 +23,9 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     _email_field = "//input[@name='username']"
     _password_field = "//input[@name='password']"
     _login_button = "//button[normalize-space()='Login']"
-    _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
+    # _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
     _login_error_message = "//div[contains(@class, 'oxd-alert-content--error')]" # Invalid credentials
+    _login_logo = "//div[@class='orangehrm-login-branding']/img[2]"
 
 
 
@@ -90,10 +91,10 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.click_login_button()
 
 
-    def verify_login_successful(self):
-        result = self.is_element_present(self._user_icon)
-        self.util.sleep(2)
-        return result
+    # def verify_login_successful(self):
+    #     result = self.is_element_present(self._user_icon)
+    #     self.util.sleep(2)
+    #     return result
 
 
     def verify_login_failed(self):
@@ -105,7 +106,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         actual_error_message = self.get_text(self._login_error_message)
         print(f">>> actual_error_message = {actual_error_message}")
         print(f">>> expected_error_message = {expected_error_message}")
-        self.util.sleep(2, "Waiting for the error message")
+        self.util.wait(2, "Waiting for the error message")
         if actual_error_message == expected_error_message:
             print("RETURN TRUE")
             return True
@@ -137,5 +138,9 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # else:
         #     return False
         return self.verify_page_title("OrangeHRM")
+
+    def verify_user_is_logged_out(self):
+        self.util.wait(2)
+        return self.is_element_present(self._login_logo)
 
 

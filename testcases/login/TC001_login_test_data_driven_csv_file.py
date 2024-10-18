@@ -3,6 +3,7 @@ import unittest
 from pages.login.login_page import LoginPage
 import pytest
 from utilities.report_status import ReportStatus
+from pages.dashboard.dashboard_page import DashboardPage
 import utilities.custom_logger as cl
 import logging
 from ddt import ddt, data, unpack
@@ -18,6 +19,7 @@ class LoginTestDataDrivenCSVFile(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def class_setup(self, onetime_setup): # need to put here "onetime_setup" to access return value
         self.lp = LoginPage(self.driver)
+        self.dp = DashboardPage(self.driver)
         self.ts = ReportStatus(self.driver)
 
 
@@ -32,7 +34,7 @@ class LoginTestDataDrivenCSVFile(unittest.TestCase):
         self.lp.login(username, password)
 
         # Step 2: Verify error message "Invalid credentials" is displayed
-        result = self.lp.verify_login_successful()
+        result = self.dp.verify_login_successful()
         self.ts.mark_final("test_valid_login", result, "Login verified")
 
 

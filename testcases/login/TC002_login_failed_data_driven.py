@@ -1,7 +1,8 @@
 import time
 import unittest
-from pages.login.login_page import LoginPage
 import pytest
+from pages.login.login_page import LoginPage
+from pages.dashboard.dashboard_page import DashboardPage
 from utilities.report_status import ReportStatus
 import utilities.custom_logger as cl
 import logging
@@ -18,6 +19,7 @@ class LoginFailedDataDriven(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def class_setup(self, onetime_setup): # need to put here "onetime_setup" to access return value
         self.lp = LoginPage(self.driver)
+        self.dp = DashboardPage(self.driver)
         self.ts = ReportStatus(self.driver)
 
 

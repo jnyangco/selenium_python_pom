@@ -18,11 +18,11 @@ class Util(object):
     log = cl.custom_logger(logging.INFO)
 
 
-    def sleep(self, sec, info=""):
+    def wait(self, sec, info=""):
         """
         Put the program to wait for the specified amount of time
         """
-        if info is not None:
+        if info != "":
             self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
         try:
             time.sleep(sec)

@@ -1,10 +1,13 @@
 import time
 import unittest
 from selenium import webdriver
-from pages.login.login_page import LoginPage
 import pytest
-from utilities.report_status import ReportStatus
 # install "pytest-order" package
+
+# pages
+from pages.login.login_page import LoginPage
+from pages.dashboard.dashboard_page import DashboardPage
+from utilities.report_status import ReportStatus
 
 import utilities.custom_logger as cl
 import logging
@@ -20,8 +23,12 @@ class LoginTest(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def class_setup(self, onetime_setup): # need to put here "onetime_setup" to access return value
         self.lp = LoginPage(self.driver)
+        self.dp = DashboardPage(self.driver)
         self.ts = ReportStatus(self.driver)
 
+    # method override
+    # def setUp(self):
+    #     print('test')
 
     @pytest.mark.order(1)
     def test_valid_login(self):
@@ -39,7 +46,7 @@ class LoginTest(unittest.TestCase):
         # Step 3: User icon should be displayed
         # result2 = self.lp.verify_login_successful()
         # assert result2 == True
-        result2 = self.lp.verify_login_successful()  # result2 = True/False
+        result2 = self.dp.verify_login_successful()  # result2 = True/False
         time.sleep(2)
         self.ts.mark_final("test_valid_login", result2, "Login successful")
 
