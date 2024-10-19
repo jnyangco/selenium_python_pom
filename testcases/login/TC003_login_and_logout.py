@@ -45,3 +45,4 @@ class LoginAndLogout(unittest.TestCase):
         result = self.lp.verify_user_is_logged_out()
         self.ts.mark_final("test_valid_login_and_logout", result, "Login and logout successful")
 
+

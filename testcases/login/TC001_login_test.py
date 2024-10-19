@@ -13,8 +13,6 @@ import utilities.custom_logger as cl
 import logging
 
 
-
-
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 class LoginTest(unittest.TestCase):
 
@@ -50,3 +48,5 @@ class LoginTest(unittest.TestCase):
         # assert result2 == True
         result = self.dp.verify_login_successful()  # result2 = True/False
         self.ts.mark_final("test_valid_login", result, "Login successful")
+
+

@@ -26,8 +26,7 @@ class LoginFailedDataDriven(unittest.TestCase):
     @pytest.mark.order(1)
     # multiple data in Tuple format
     @data(("Admin1", "admin123", "Invalid credentials"),
-          ("Admin2", "admin123", "Invalid credentials"),
-          ("Admin3", "admin123", "Invalid credentials"))
+          ("Admin2", "admin123", "Invalid credentials"))
     @unpack  # this will unpack the data/parameter below
     def test_invalid_login(self, username, password, error_message):
         # Step 1: Login using username and password

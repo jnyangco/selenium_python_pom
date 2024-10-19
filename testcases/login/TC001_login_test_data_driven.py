@@ -26,7 +26,6 @@ class LoginTestDataDriven(unittest.TestCase):
     @pytest.mark.order(1)
     # multiple data in Tuple format
     @data(("Admin", "admin123"),
-          ("Admin", "admin123"),
           ("Admin", "admin123"))
     @unpack  # this will unpack the data/parameter below
     def test_valid_login(self, username, password):
