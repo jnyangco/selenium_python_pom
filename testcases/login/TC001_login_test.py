@@ -19,7 +19,7 @@ class LoginTest(unittest.TestCase):
     log = cl.custom_logger(logging.INFO)
 
     @pytest.fixture(autouse=True)
-    def class_setup(self, onetime_setup): # need to put here "onetime_setup" to access return value
+    def class_setup(self, onetime_setup, set_up): # need to put here "onetime_setup" to access return value
         self.lp = LoginPage(self.driver)
         self.dp = DashboardPage(self.driver)
         self.ts = ReportStatus(self.driver)

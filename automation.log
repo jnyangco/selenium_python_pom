@@ -475,3 +475,21 @@
 10/19/2024 12:15:54 PM - LoginPage - INFO: Element appeared on the web page
 10/19/2024 12:15:56 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login and logout successful
 10/19/2024 12:15:56 PM - ReportStatus - INFO: test_valid_login_and_logout ### TEST CASE PASSED ###
+10/19/2024 01:48:06 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+10/19/2024 01:48:07 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+10/19/2024 01:48:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+10/19/2024 01:48:07 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+10/20/2024 02:33:25 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+10/20/2024 02:33:25 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+10/20/2024 02:33:25 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+10/20/2024 02:33:26 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+10/20/2024 02:33:28 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+10/20/2024 02:33:28 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+10/20/2024 02:33:28 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+10/20/2024 02:33:28 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+10/20/2024 02:33:28 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/20/2024 02:33:28 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+10/20/2024 02:33:28 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+10/20/2024 02:33:28 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+10/20/2024 02:33:30 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+10/20/2024 02:33:30 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
