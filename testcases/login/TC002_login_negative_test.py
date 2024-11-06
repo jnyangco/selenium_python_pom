@@ -8,13 +8,14 @@ from utilities.report_status import ReportStatus
 # install "pytest-order" package
 import utilities.custom_logger as cl
 import logging
+
 log = cl.custom_logger(logging.INFO)
 
 
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 class LoginNegativeTest(unittest.TestCase):
 
-    @pytest.mark.order(1)
+    # @pytest.mark.order(1)
     def test_login_negative(self):
         login_page = LoginPage(self.driver)
         report = ReportStatus(self.driver)

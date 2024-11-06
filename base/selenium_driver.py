@@ -94,7 +94,9 @@ class SeleniumDriver:
             # NOTE: * -> is used to unpack the locator values (By.ID, "button[@id='login']
 
             # print("Element found with locator: " +locator + " and locator_type: " +locator_type)
-            self.log.info("Element found with locator: " +str(locator))
+
+            # Temporary Commented Out
+            # self.log.info("Element found with locator: " +str(locator))
         except:
             # print("Element not found with locator: " +locator + " and locator_type: " +locator_type)
             self.log.info("Element not found with locator: " +str(locator))

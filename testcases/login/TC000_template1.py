@@ -3,24 +3,19 @@ import unittest
 from selenium import webdriver
 import pytest
 # install "pytest-order" package
-
 # pages
 from pages.login.login_page import LoginPage
 from pages.dashboard.dashboard_page import DashboardPage
 from utilities.report_status import ReportStatus
-
 import utilities.custom_logger as cl
 import logging
+
+log = cl.custom_logger(logging.INFO)
 
 
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 class LoginTest(unittest.TestCase):
 
-    log = cl.custom_logger(logging.INFO)
-
-    # @pytest.fixture(autouse=True)
-    # def class_setup(self, onetime_setup):
-    #     pass
 
     @pytest.mark.order(1)
     def test_valid_login1(self):

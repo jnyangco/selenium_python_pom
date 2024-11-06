@@ -17,8 +17,11 @@ class DashboardPage(BasePage):
     _search_textbox = (By.XPATH, "//input[@placeholder='Search']")
     _first_menu_result = (By.XPATH, "//div[@class='oxd-sidepanel-body']/ul[1]")
     _add_button = (By.XPATH, "//button[normalize-space()='Add']")
-    _user_icon = (By.XPATH, "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
     _logout_option = (By.XPATH, "//a[text()='Logout']")
+
+    _header_dashboard_text = (By.XPATH, "//h6[text()='Dashboard']")
+    _header_upgrade_button = (By.XPATH, "//button[text()=' Upgrade']")
+    _header_user_icon = (By.XPATH, "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
 
 
     # ACTION ---------------------------------------------------------------------------------------------------------
@@ -29,7 +32,7 @@ class DashboardPage(BasePage):
         self.element_click(self._first_menu_result)
 
     def click_user_icon(self):
-        self.element_click(self._user_icon)
+        self.element_click(self._header_user_icon)
 
     def click_logout_option(self):
         self.element_click(self._logout_option)
@@ -44,7 +47,7 @@ class DashboardPage(BasePage):
 
 
     def verify_login_successful(self):
-        result = self.is_element_present(self._user_icon)
+        result = self.is_element_present(self._header_user_icon)
         self.util.wait(2)
         return result
 
@@ -53,4 +56,25 @@ class DashboardPage(BasePage):
         self.click_user_icon()
         self.util.wait(1)
         self.click_logout_option()
+
+
+    def verify_header_elements_displayed(self):
+        bool_list = []
+        result = self.is_element_present(self._header_dashboard_text)
+        bool_list.append(result)
+        print(f'Result -> _header_dashboard_text = {result}')
+
+        result = self.is_element_present(self._header_upgrade_button)
+        bool_list.append(result)
+        print(f'Result -> _header_upgrade_button = {result}')
+
+        result = self.is_element_present(self._header_user_icon)
+        bool_list.append(result)
+        print(f'Result -> _header_user_icon = {result}')
+
+        result = all(bool_list)
+        print(f'Result -> verify_header_elements_displayed = {result}')
+
+        return result
+
 

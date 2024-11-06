@@ -26,7 +26,7 @@ class LoginTestDataDrivenCSVFile(unittest.TestCase):
     @pytest.mark.order(1)
     # multiple data in Tuple format
     # * -> telling python there are multiple arguments, need to unpack multiple data in a list
-    @data(*read_csv_data("/Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/testdata_login.csv"))
+    @data(*read_csv_data("/testdata_login.csv"))
     @unpack  # this will unpack the data/parameter below
     def test_valid_login(self, username, password):
         # Step 1: Login using username and password

@@ -1,15 +1,11 @@
 import time
-
 from selenium.webdriver.common.by import By
 # from base.selenium_driver import SeleniumDriver
-
 # -> import this log if you want to print this class "LoginPage" in the logs
 # -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
 from utilities import custom_logger as cl
 import logging
-
 from base.basepage import BasePage
-
 
 # class LoginPage(SeleniumDriver): # inherit SeleniumDriver
 class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
