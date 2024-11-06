@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
-from utilities import custom_logger as cl
+from utils import custom_logger as cl
 import logging
 from base.basepage import BasePage
-from utilities.report_status import ReportStatus
+from utils.report_status import ReportStatus
 
 class DashboardPage(BasePage):
 

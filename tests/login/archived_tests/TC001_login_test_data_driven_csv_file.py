@@ -1,18 +1,18 @@
 import time
 import unittest
-import pytest
 from pages.login.login_page import LoginPage
+import pytest
+from utils.report_status import ReportStatus
 from pages.dashboard.dashboard_page import DashboardPage
-from utilities.report_status import ReportStatus
-import utilities.custom_logger as cl
+import utils.custom_logger as cl
 import logging
 from ddt import ddt, data, unpack
-
+from utils.read_data import read_csv_data
 
 
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 @ddt
-class LoginFailedDataDriven(unittest.TestCase):
+class LoginTestDataDrivenCSVFile(unittest.TestCase):
 
     log = cl.custom_logger(logging.INFO)
 
@@ -25,16 +25,16 @@ class LoginFailedDataDriven(unittest.TestCase):
 
     @pytest.mark.order(1)
     # multiple data in Tuple format
-    @data(("Admin1", "admin123", "Invalid credentials"),
-          ("Admin2", "admin123", "Invalid credentials"))
+    # * -> telling python there are multiple arguments, need to unpack multiple data in a list
+    @data(*read_csv_data("/testdata_login.csv"))
     @unpack  # this will unpack the data/parameter below
-    def test_invalid_login(self, username, password, error_message):
+    def test_valid_login(self, username, password):
         # Step 1: Login using username and password
         self.lp.open_orangehrm()
         self.lp.login(username, password)
 
         # Step 2: Verify error message "Invalid credentials" is displayed
-        result = self.lp.verify_login_error_message(error_message)
-        self.ts.mark_final("test_invalid_login", result, "Error message verified")
+        result = self.dp.verify_login_successful()
+        self.ts.mark_final("test_valid_login", result, "Login verified")
 
 

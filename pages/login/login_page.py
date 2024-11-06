@@ -3,10 +3,10 @@ from selenium.webdriver.common.by import By
 # from base.selenium_driver import SeleniumDriver
 # -> import this log if you want to print this class "LoginPage" in the logs
 # -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
-from utilities import custom_logger as cl
+from utils import custom_logger as cl
 import logging
 from base.basepage import BasePage
-from utilities.report_status import ReportStatus
+from utils.report_status import ReportStatus
 
 
 # class LoginPage(SeleniumDriver): # inherit SeleniumDriver
@@ -70,7 +70,9 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # login_button.click()
 
     def open_orangehrm(self):
-        self.open_url("https://opensource-demo.orangehrmlive.com")
+        # self.open_url("https://opensource-demo.orangehrmlive.com")
+        # self.open_url("/admin")  # "/admin" is optional - positional arguments
+        self.open_url()
 
     def open_publication(self):
         self.open_url("https://www.publication-test.com")

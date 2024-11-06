@@ -1,5 +1,5 @@
 # Screenshot Files
-/screenshots
+/reports
 
 # IDE Specific
 .DS_Store
@@ -9,7 +9,7 @@ base/__pycache__/
 pages/__pycache__/
 pages/dashboard/__pycache__/
 pages/login/__pycache__/
-testcases/__pycache__/
-testcases/dashboard/__pycache__/
-testcases/login/__pycache__/
-utilities/__pycache__/
+tests/__pycache__/
+tests/dashboard/__pycache__/
+tests/login/__pycache__/
+utils/__pycache__/

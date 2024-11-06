@@ -10,13 +10,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 
 # packages for logger
-# import utilities.custom_logger
-from utilities import custom_logger as cl
+# import utils.custom_logger
+from utils import custom_logger as cl
 import logging
 
-# for screenshots
+# for reports
 import time
 import os
+
+from utils.config_reader import read_config
+
 
 # Custom Class - wrapper for selenium webdriver
 # Every Page Class -> should inherit from SeleniumDriver()
@@ -29,11 +32,16 @@ class SeleniumDriver:
     # like constructor
     def __init__(self, driver):
         self.driver = driver
+        self.base_url = read_config("Url", "base_url")
 
 
     # ===== METHODS BELOW ===== #
-    def open_url(self, base_url):
-        self.driver.get(base_url)
+    # def open_url(self, base_url):
+    #     self.driver.get(base_url)
+
+    def open_url(self, url_path=""):
+        url = self.base_url + url_path
+        self.driver.get(url)
 
     def screenshot(self, result_message):
         """
@@ -41,7 +49,7 @@ class SeleniumDriver:
         """
         print()
         filename = result_message + "." + str(round(time.time() * 1000)) + ".png" #png is more compressed / smaller file
-        screenshot_directory = "../screenshots/"
+        screenshot_directory = "../reports/"
         relative_filename = screenshot_directory + filename  # this is the filepath
 
         current_directory = os.path.dirname(__file__)
@@ -50,7 +58,7 @@ class SeleniumDriver:
         destination_directory = os.path.join(current_directory, screenshot_directory)
 
         try:
-            # if "screenshots" folder not exist, create a folder
+            # if "reports" folder not exist, create a folder
             if not os.path.exists(destination_directory):
                 os.makedirs(destination_directory)
             self.driver.save_screenshot(destination_file)

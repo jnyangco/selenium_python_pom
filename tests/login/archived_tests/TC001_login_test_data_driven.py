@@ -3,8 +3,8 @@ import unittest
 import pytest
 from pages.login.login_page import LoginPage
 from pages.dashboard.dashboard_page import DashboardPage
-from utilities.report_status import ReportStatus
-import utilities.custom_logger as cl
+from utils.report_status import ReportStatus
+import utils.custom_logger as cl
 import logging
 from ddt import ddt, data, unpack
 

@@ -4,16 +4,15 @@ import pytest
 # pages
 from pages.login.login_page import LoginPage
 from pages.dashboard.dashboard_page import DashboardPage
-from utilities.report_status import ReportStatus
+from utils.report_status import ReportStatus
 # install "pytest-order" package
-import utilities.custom_logger as cl
+import utils.custom_logger as cl
 import logging
 
 log = cl.custom_logger(logging.INFO)
 
-
 @pytest.mark.usefixtures("onetime_setup", "set_up")
-class LoginNegativeTest(unittest.TestCase):
+class TestLoginNegative:
 
     # @pytest.mark.order(1)
     def test_login_negative(self):
