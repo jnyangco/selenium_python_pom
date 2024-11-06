@@ -21,8 +21,9 @@ def set_up(): # method level setup (default scope)
 # scope=function
 #
 # @pytest.fixture(scope="class") # default from tutorial
+# @pytest.fixture(scope="function") # when each test in a single python file need to reset setup (i.e: opening browser)
 @pytest.fixture(scope="function")
-def onetime_setup(request, browser, os_type): # --browser from command line
+def onetime_setup(request, browser, os_type):  # --browser from command line
     print("\n========== Run one time setup (conftest.py) ==========")  # before method
 
     # Get Driver Instance

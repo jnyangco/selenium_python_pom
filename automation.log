@@ -493,3 +493,316 @@
 10/20/2024 02:33:28 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
 10/20/2024 02:33:30 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
 10/20/2024 02:33:30 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:43:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:43:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:43:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:43:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:43:08 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:43:08 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:43:08 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:43:08 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:43:08 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:43:08 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:43:09 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:43:09 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:43:11 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:43:11 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:44:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:44:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:44:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:44:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:44:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:44:08 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:44:08 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:44:08 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:44:08 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:44:08 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:44:08 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:44:08 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:44:10 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:44:10 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:54:01 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:54:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:54:01 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:54:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:54:03 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:54:03 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:54:04 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:54:04 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:54:04 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:54:04 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:54:04 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:54:04 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:54:06 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:54:06 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:55:19 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:55:19 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:55:19 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:55:19 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:55:21 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:55:22 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:55:22 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:55:22 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:55:22 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:55:22 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:55:22 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:55:22 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:55:24 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:55:24 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:56:08 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:08 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:08 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:08 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:10 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:11 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:11 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:11 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:11 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:56:11 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:56:11 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:11 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:13 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:56:13 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:56:19 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:19 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:24 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:24 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:31 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:31 PM - LoginPage - INFO: Cannot click on the element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:31 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:31 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:31 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:56:31 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:56:31 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:31 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:33 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:56:33 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:56:50 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:50 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:56:50 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:50 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:56:52 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:53 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:56:53 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:53 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:56:53 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:56:53 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:56:53 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:53 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:56:55 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:56:55 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 07:57:01 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:57:01 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 07:57:06 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:57:06 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 07:57:13 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:57:13 PM - LoginPage - INFO: Cannot click on the element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 07:57:13 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:57:13 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 07:57:13 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 07:57:13 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 07:57:13 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:57:13 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 07:57:15 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 07:57:15 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 09:47:10 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 09:47:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 09:47:10 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 09:47:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 09:47:12 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 09:47:13 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 09:47:13 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 09:47:13 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 09:47:13 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 09:47:13 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 09:47:13 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 09:47:13 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 09:47:15 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 09:47:15 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:07:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:07:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:07:05 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:07:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:07:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:07:07 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:07:08 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:07:08 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:07:08 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:07:08 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:07:08 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:07:08 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:07:10 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:07:10 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:18:11 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:18:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:18:11 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:18:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:18:13 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:18:14 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:18:14 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:18:14 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:18:14 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:18:14 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:18:14 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:18:14 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:18:16 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:18:16 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:19:53 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:19:53 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:19:53 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:19:53 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:19:55 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:19:55 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:19:56 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:19:56 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:19:56 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:19:56 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:19:56 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:19:56 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:19:58 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:19:58 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:21:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:07 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:08 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:10 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:10 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:10 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:10 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:21:10 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:21:15 PM - DashboardPage - INFO: Element not found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:15 PM - DashboardPage - INFO: Element NOT present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:17 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Login successful
+11/05/2024 10:21:17 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Login successful.1730863277472.png
+11/05/2024 10:21:17 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+11/05/2024 10:21:25 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:25 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:25 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:25 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:27 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:27 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:28 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:28 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:28 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:21:28 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:21:33 PM - DashboardPage - INFO: Element not found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:33 PM - DashboardPage - INFO: Element NOT present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:35 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Login successful
+11/05/2024 10:21:35 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Login successful.1730863295102.png
+11/05/2024 10:21:35 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+11/05/2024 10:21:40 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:40 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:40 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:40 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:42 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:43 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:43 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:43 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:43 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:21:43 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:21:43 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:43 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:45 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:21:45 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:21:47 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:47 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:21:47 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:47 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:21:49 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:50 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:21:50 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:50 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:21:50 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:21:50 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:21:55 PM - DashboardPage - INFO: Element not found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:55 PM - DashboardPage - INFO: Element NOT present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:21:57 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Login successful
+11/05/2024 10:21:57 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Login successful.1730863317317.png
+11/05/2024 10:21:57 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+11/05/2024 10:22:26 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:26 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:26 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:22:26 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:22:28 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:22:28 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:22:29 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:22:29 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:22:29 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:22:29 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:22:34 PM - DashboardPage - INFO: Element not found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:22:34 PM - DashboardPage - INFO: Element NOT present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:22:36 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Login successful
+11/05/2024 10:22:36 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Login successful.1730863356267.png
+11/05/2024 10:22:36 PM - ReportStatus - ERROR: test_valid_login ### TEST CASE FAILED ###
+11/05/2024 10:22:38 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:38 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:22:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:22:40 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:22:41 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:22:41 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:22:41 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:22:41 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:22:41 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:22:41 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:22:41 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:22:43 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:22:43 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:22:59 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:59 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:22:59 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:22:59 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:23:01 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:23:02 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:23:02 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:23:02 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:23:02 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:23:02 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:23:02 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:23:02 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:23:04 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:23:04 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:23:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:23:07 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:23:07 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:23:07 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:23:09 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:23:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:23:10 PM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:23:10 PM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/05/2024 10:23:10 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/05/2024 10:23:10 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/05/2024 10:23:10 PM - DashboardPage - INFO: Element found with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:23:10 PM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/05/2024 10:23:12 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/05/2024 10:23:12 PM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/05/2024 10:29:11 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:29:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:29:11 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:29:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:29:13 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:29:14 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:29:14 PM - LoginPage - DEBUG: In locator condition
+11/05/2024 10:29:19 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//div[contains(@class, 'oxd-alert-content--error')]")
+11/05/2024 10:29:19 PM - LoginPage - DEBUG: Before finding text
+11/05/2024 10:29:19 PM - LoginPage - ERROR: Failed to get text on element 
+11/05/2024 10:29:19 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/05/2024 10:29:21 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Error message verified
+11/05/2024 10:29:21 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../screenshots/Error message verified.1730863761035.png
+11/05/2024 10:29:21 PM - ReportStatus - ERROR: test_invalid_login ### TEST CASE FAILED ###
+11/05/2024 10:29:32 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:29:32 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/05/2024 10:29:32 PM - LoginPage - INFO: Element found with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:29:32 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/05/2024 10:29:34 PM - LoginPage - INFO: Element found with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:29:35 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/05/2024 10:29:35 PM - LoginPage - DEBUG: In locator condition
+11/05/2024 10:29:35 PM - LoginPage - INFO: Element found with locator: ('xpath', "//div[contains(@class, 'oxd-alert-content--error')]")
+11/05/2024 10:29:35 PM - LoginPage - DEBUG: Before finding text
+11/05/2024 10:29:35 PM - LoginPage - DEBUG: After finding element, size is: 19
+11/05/2024 10:29:35 PM - LoginPage - INFO: Getting text on element :: 
+11/05/2024 10:29:35 PM - LoginPage - INFO: The text is :: 'Invalid credentials'
+11/05/2024 10:29:35 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/05/2024 10:29:37 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Error message verified
+11/05/2024 10:29:37 PM - ReportStatus - INFO: test_invalid_login ### TEST CASE PASSED ###
