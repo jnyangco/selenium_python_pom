@@ -6,6 +6,8 @@ from selenium.webdriver.common.by import By
 from utilities import custom_logger as cl
 import logging
 from base.basepage import BasePage
+from utilities.report_status import ReportStatus
+
 
 # class LoginPage(SeleniumDriver): # inherit SeleniumDriver
 class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
@@ -88,6 +90,12 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         time.sleep(2)
         self.click_login_button()
 
+    def login_v2(self, username, password):
+        self.send_text(username, self._email_field)
+        self.send_text(password, self._password_field)
+        time.sleep(2)
+        self.element_click(self._login_button)
+
 
     # def verify_login_successful(self):
     #     result = self.is_element_present(self._user_icon)
@@ -137,6 +145,18 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # else:
         #     return False
         return self.verify_page_title("OrangeHRM")
+
+
+    def verify_login_page_title_v2(self):
+        # time.sleep(2)
+        # if self.get_title() == "OrangeHRM1":
+        #     return True
+        # else:
+        #     return False
+        report = ReportStatus(self.driver)
+        result = self.verify_page_title("OrangeHRM1")
+        print(f">>> RESULT = {result}")
+        report.mark(result, "Page Title Verified")
 
 
     def verify_user_is_logged_out(self):

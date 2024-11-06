@@ -1,4 +1,5 @@
 # conftest.py -> should be placed on testcase folder level
+# ADDITIONAL INFO: conftest.py can be placed on the main project folder (not necessary to be inside the testcases folder)
 # Configuration Test -> common pytest method
 import pytest
 from selenium import webdriver

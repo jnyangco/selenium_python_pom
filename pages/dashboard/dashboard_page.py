@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from utilities import custom_logger as cl
 import logging
 from base.basepage import BasePage
-
+from utilities.report_status import ReportStatus
 
 class DashboardPage(BasePage):
 
@@ -50,6 +50,14 @@ class DashboardPage(BasePage):
         result = self.is_element_present(self._header_user_icon)
         self.util.wait(2)
         return result
+
+
+    def verify_login_successful_v2(self):
+        result = self.is_element_present(self._header_user_icon)
+        self.util.wait(2)
+        report = ReportStatus(self.driver)
+        report.mark_final("test_valid_login", result, "Login successful")
+        # return result
 
 
     def logout(self):

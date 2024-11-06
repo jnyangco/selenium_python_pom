@@ -30,21 +30,28 @@ class ReportStatus(SeleniumDriver):
         try:
             if result is not None:
                 if result:
+                    print(f"IF 1: > set result = {result}")
                     self.resultList.append("PASS")
                     self.log.info("### VERIFICATION SUCCESSFUL :: + " + result_message)
+                    print(f"RESULT LIST = {self.resultList}")
                 else:
+                    print(f"ELSE 1: set result = {result}")
                     self.resultList.append("FAIL")
                     self.log.error("### VERIFICATION FAILED :: + " + result_message)
                     self.screenshot(result_message)
+                    print(f"RESULT LIST = {self.resultList}")
             else:
+                print(f"ELSE 2: set result = {result}")
                 self.resultList.append("FAIL")
                 self.log.error("### VERIFICATION FAILED :: + " + result_message)
                 self.screenshot(result_message)
+                print(f"RESULT LIST = {self.resultList}")
         except:
             self.resultList.append("FAIL")
             self.log.error("### Exception Occurred !!!")
             self.screenshot(result_message)
             print_stack()
+            print(f"RESULT LIST = {self.resultList}")
 
     # CHECK IF TRUE or FALSE
     # mark (assert) -> if Pass (append PASS to the list), if Fail (append FAIL to the list)
@@ -63,6 +70,7 @@ class ReportStatus(SeleniumDriver):
         """
         self.set_result(result, result_message)
 
+        print(f"self.resultList = {self.resultList}")
         if "FAIL" in self.resultList:
             self.log.error(test_name + " ### TEST CASE FAILED ###")
             self.resultList.clear()
