@@ -802,3 +802,157 @@
 11/21/2024 10:28:03 AM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
 11/21/2024 10:28:05 AM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
 11/21/2024 10:28:05 AM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
+11/27/2024 04:42:03 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:42:03 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:42:08 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:42:08 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:42:15 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:42:15 PM - LoginPage - INFO: Cannot click on the element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:46:17 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:46:17 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:46:17 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:46:20 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:51:33 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:51:33 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:51:33 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:51:36 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:53:30 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:53:30 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:53:30 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:53:33 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:54:01 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:54:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:54:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:54:04 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:54:22 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:54:22 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:54:22 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:54:25 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 04:56:17 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 04:56:18 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 04:56:18 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 04:56:21 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:11:17 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:11:17 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:11:17 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:11:21 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:11:31 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:11:31 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:11:31 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:11:31 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:11:31 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:11:55 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:11:55 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:11:55 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:11:59 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:12:09 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:12:09 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:12:09 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:12:09 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:12:09 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:13:05 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:13:05 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:13:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:13:09 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:13:19 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:13:19 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:13:19 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:13:19 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:13:19 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:13:26 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:13:26 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:13:26 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:13:30 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:13:40 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:13:40 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:13:40 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:13:40 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:13:40 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:14:47 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:14:47 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:14:47 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:14:51 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:15:01 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:15:01 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:15:01 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:15:01 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:15:01 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:16:24 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:16:24 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:16:24 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:16:28 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:16:38 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:16:38 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:16:38 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:16:38 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:16:38 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:35:54 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:35:54 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:35:54 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:35:58 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:36:08 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:36:08 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:36:08 PM - LoginPage - DEBUG: After finding element, size is: 9
+11/27/2024 05:36:08 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:36:08 PM - LoginPage - INFO: The text is :: 'askomdch1'
+11/27/2024 05:36:15 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:36:15 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:36:20 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:36:20 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:36:27 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:36:27 PM - LoginPage - INFO: Cannot click on the element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:36:27 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:36:32 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//ul[@class='woocommerce-error']/li")
+11/27/2024 05:36:32 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:36:32 PM - LoginPage - ERROR: Failed to get text on element 
+11/27/2024 05:36:32 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/27/2024 05:36:59 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:36:59 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:37:04 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:37:04 PM - LoginPage - INFO: Cannot send text on the element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:37:11 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:37:11 PM - LoginPage - INFO: Cannot click on the element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:37:11 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:37:16 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//ul[@class='woocommerce-error']/li")
+11/27/2024 05:37:16 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:37:16 PM - LoginPage - ERROR: Failed to get text on element 
+11/27/2024 05:37:16 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/27/2024 05:37:28 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:37:28 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:37:28 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:37:31 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:37:31 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:37:36 PM - LoginPage - INFO: Element not found with locator: ('xpath', "//ul[@class='woocommerce-error']/li")
+11/27/2024 05:37:36 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:37:36 PM - LoginPage - ERROR: Failed to get text on element 
+11/27/2024 05:37:36 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/27/2024 05:37:50 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:37:50 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:37:50 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:37:53 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:37:53 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:37:53 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:37:53 PM - LoginPage - DEBUG: After finding element, size is: 92
+11/27/2024 05:37:53 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:37:53 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+11/27/2024 05:37:53 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/27/2024 05:42:11 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:42:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:42:11 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:42:13 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:42:13 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:42:13 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:42:13 PM - LoginPage - DEBUG: After finding element, size is: 92
+11/27/2024 05:42:13 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:42:13 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+11/27/2024 05:42:13 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
+11/27/2024 05:52:36 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+11/27/2024 05:52:36 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+11/27/2024 05:52:36 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+11/27/2024 05:52:39 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+11/27/2024 05:52:39 PM - LoginPage - DEBUG: In locator condition
+11/27/2024 05:52:39 PM - LoginPage - DEBUG: Before finding text
+11/27/2024 05:52:39 PM - LoginPage - DEBUG: After finding element, size is: 92
+11/27/2024 05:52:39 PM - LoginPage - INFO: Getting text on element :: 
+11/27/2024 05:52:39 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+11/27/2024 05:52:39 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message

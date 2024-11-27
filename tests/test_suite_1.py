@@ -2,7 +2,7 @@ import unittest
 
 # Import test classes
 from tests.login.archived_tests.TC001_login_test_backup_v3_1 import LoginTest
-from tests.login.TC002_login_negative_test import LoginNegativeTest
+from tests.login.test_login_invalid import LoginNegativeTest
 from tests.dashboard.TC001_dashboard_ui_verification import DashboardUIVerification
 
 # Get all tests from the test classes

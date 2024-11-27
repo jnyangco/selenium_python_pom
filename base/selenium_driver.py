@@ -32,13 +32,15 @@ class SeleniumDriver:
     # like constructor
     def __init__(self, driver):
         self.driver = driver
-        self.base_url = read_config("Url", "base_url")
+        self.base_url = read_config("url", "base_url")
 
 
     # ===== METHODS BELOW ===== #
     # def open_url(self, base_url):
     #     self.driver.get(base_url)
 
+    # positional argument -> by default it will open the base_url
+    # if url is provided, it will open the provided url
     def open_url(self, url_path=""):
         url = self.base_url + url_path
         self.driver.get(url)

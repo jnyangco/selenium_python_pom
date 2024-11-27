@@ -4,9 +4,9 @@
 import pytest
 
 pytest.main([
-    "tests/login/TC001_login_1_test.py",
-    "tests/login/TC001_login_2_test.py",
-    "tests/login/TC002_login_negative_test.py",
+    "tests/login/00_TC001_login_1.py",
+    "tests/login/00_TC001_login_2.py",
+    "tests/login/test_login_invalid.py",
     "--browser", "firefox"
 
     # "-m", "login"

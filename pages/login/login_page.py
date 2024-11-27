@@ -19,11 +19,15 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.driver = driver
 
     # Locators
-    _email_field = (By.XPATH, "//input[@name='username']")
-    _password_field = (By.XPATH, "//input[@name='password']")
-    _login_button = (By.XPATH, "//button[normalize-space()='Login']")
+    _header_menu_account = (By.XPATH, "//li[@id='menu-item-1237']/a")
+    _email_textbox = (By.XPATH, "//input[@id='username']")
+    _password_textbox = (By.XPATH, "//input[@id='password']")
+    _login_button = (By.XPATH, "//button[@value='Log in']")
+    _login_hello_user_message = (By.XPATH, "//div[@class='woocommerce-MyAccount-content']/p/strong[1]")
+
+
     # _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
-    _login_error_message = (By.XPATH, "//div[contains(@class, 'oxd-alert-content--error')]") # Invalid credentials
+    _login_error_message = (By.XPATH, "//ul[@class='woocommerce-error']/li") # Invalid credentials
     _login_logo = (By.XPATH, "//div[@class='orangehrm-login-branding']/img")
 
 
@@ -43,17 +47,21 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     # ACTION ---------------------------------------------------------------------------------------------------------
     def enter_username(self, email):
         # self.get_username_field().send_keys(email)
-        self.send_text(email, self._email_field) # locator_type optional -> default value is xpath
+        self.send_text(email, self._email_textbox) # locator_type optional -> default value is xpath
 
 
     def enter_password(self, password):
         # self.get_password_field().send_keys(password)
-        self.send_text(password, self._password_field)
+        self.send_text(password, self._password_textbox)
 
 
     def click_login_button(self):
         # self.get_login_button().click()
         self.element_click(self._login_button)
+
+
+    def click_header_menu_account(self):
+        self.element_click(self._header_menu_account)
 
 
 
@@ -71,6 +79,11 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     def open_orangehrm(self):
         # self.open_url("https://opensource-demo.orangehrmlive.com")
+        # self.open_url("/admin")  # "/admin" is optional - positional arguments
+        self.open_url()
+
+    def open_askomdch(self):
+        # self.open_url("https://askomdch.com")
         # self.open_url("/admin")  # "/admin" is optional - positional arguments
         self.open_url()
 
@@ -93,8 +106,8 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.click_login_button()
 
     def login_v2(self, username, password):
-        self.send_text(username, self._email_field)
-        self.send_text(password, self._password_field)
+        self.send_text(username, self._email_textbox)
+        self.send_text(password, self._password_textbox)
         time.sleep(2)
         self.element_click(self._login_button)
 
@@ -116,12 +129,15 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         print(f">>> expected_error_message = {expected_error_message}")
         self.util.wait(2, "Waiting for the error message")
 
-        if actual_error_message == expected_error_message:
-            print("RETURN TRUE")
-            return True
-        else:
-            print("RETURN FALSE")
-            return False
+        # if actual_error_message == expected_error_message:
+        #     print("RETURN TRUE")
+        #     return True
+        # else:
+        #     print("RETURN FALSE")
+        #     return False
+        assert actual_error_message == expected_error_message, \
+            f">>> Failed Step: actual_message = {actual_error_message}, expected_message = {expected_error_message}"
+
 
 
     # def verify_login_failed2(self):
@@ -134,9 +150,9 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
 
     def clear_fields(self):
-        email_field = self.get_element(self._email_field)
+        email_field = self.get_element(self._email_textbox)
         email_field.clear()
-        password_field = self.get_element(self._password_field)
+        password_field = self.get_element(self._password_textbox)
         password_field.clear()
 
 
@@ -147,6 +163,12 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # else:
         #     return False
         return self.verify_page_title("OrangeHRM")
+
+
+    def verify_login_hello_user_message(self, expected_message):
+        actual_message = self.get_text(self._login_hello_user_message)
+        assert actual_message == expected_message, \
+            f">>> Failed Step: actual_message = {actual_message}, expected_message = {expected_message}"
 
 
     def verify_login_page_title_v2(self):
