@@ -792,3 +792,13 @@
 11/06/2024 06:13:21 PM - Util - INFO: Wait :: '2' seconds for Waiting for the error message
 11/06/2024 06:13:23 PM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Error message verified
 11/06/2024 06:13:23 PM - ReportStatus - INFO: test_invalid_login ### TEST CASE PASSED ###
+11/21/2024 10:28:00 AM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='username']")
+11/21/2024 10:28:00 AM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@name='password']")
+11/21/2024 10:28:03 AM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[normalize-space()='Login']")
+11/21/2024 10:28:03 AM - Util - INFO: Actual Text From Application Web UI --> :: OrangeHRM
+11/21/2024 10:28:03 AM - Util - INFO: Expected Text From Application Web UI --> :: OrangeHRM
+11/21/2024 10:28:03 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/21/2024 10:28:03 AM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Title verified
+11/21/2024 10:28:03 AM - DashboardPage - INFO: Element present with locator: ('xpath', "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']")
+11/21/2024 10:28:05 AM - ReportStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Login successful
+11/21/2024 10:28:05 AM - ReportStatus - INFO: test_valid_login ### TEST CASE PASSED ###
