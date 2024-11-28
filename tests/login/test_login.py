@@ -31,7 +31,7 @@ class TestLogin:
         util.wait(10)
 
         # Step 2: Verify hello user message is correct
-        login_page.verify_login_hello_user_message("askomdch1")
+        login_page.verify_login_hello_user_message(username)
 
 
     def test_invalid_login(self):
@@ -41,9 +41,9 @@ class TestLogin:
         login_page.open_askomdch()
         login_page.click_header_menu_account()
         username = data("credentials","username")
-        login_page.login(username, "Password#387465")
+        invalid_password = "Password#387465"
+        login_page.login(username, invalid_password)
 
         # Step 2: Verify error message is displayed
         login_page.verify_login_error_message("Error: The password you entered for the username {} is incorrect. "
                                               "Lost your password?".format(username))
-
