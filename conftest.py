@@ -31,10 +31,6 @@ def onetime_setup(request, browser, os_type):  # --browser from command line
     wdf = WebDriverFactory(browser)
     driver = wdf.get_web_driver_instance()
 
-    # include login to application by default
-    # lp = LoginPage(driver)
-    # lp.login("test@email.com", "abc")
-
     # if browser.lower() == "firefox":
     #     base_url = "https://opensource-demo.orangehrmlive.com"
     #     driver = webdriver.Firefox()

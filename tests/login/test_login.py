@@ -28,12 +28,12 @@ class TestLogin:
         username = data("credentials","username")
         password = data("credentials","password")
         login_page.login(username, password)
-        util.wait(10)
+        # util.wait(10)
 
         # Step 2: Verify hello user message is correct
         login_page.verify_login_hello_user_message(username)
 
-
+    @pytest.mark.login
     def test_invalid_login(self):
         login_page = LoginPage(self.driver)
 

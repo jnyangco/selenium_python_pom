@@ -15,7 +15,7 @@ log = cl.custom_logger(logging.INFO)
 @pytest.mark.usefixtures("onetime_setup", "set_up")
 class TestLogin:
 
-    @pytest.mark.login
+    # @pytest.mark.login
     def test_valid_login1(self):
         login_page = LoginPage(self.driver)
         dashboard_page = DashboardPage(self.driver)

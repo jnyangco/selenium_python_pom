@@ -25,12 +25,20 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     _login_button = (By.XPATH, "//button[@value='Log in']")
     _login_hello_user_message = (By.XPATH, "//div[@class='woocommerce-MyAccount-content']/p/strong[1]")
 
-
-    # _user_icon = "//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']"
     _login_error_message = (By.XPATH, "//ul[@class='woocommerce-error']/li") # Invalid credentials
-    _login_logo = (By.XPATH, "//div[@class='orangehrm-login-branding']/img")
+    _login_headers = (By.XPATH, "(//ul[@id='ast-hf-menu-1'])[1]/li")
 
 
+    def verify_login_headers(self):
+        headers = self.get_element_list(self._login_headers)
+        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
+
+        assert len(headers) == len(expected_headers), \
+            f">>> Failed: Expected total elements = {len(expected_headers)}, Actual total elements = {len(headers)}"
+
+        for index, actual_header in enumerate(headers):
+            assert actual_header.text == expected_headers[index], \
+                f"Header text mismatch at index {index}. Expected header = {expected_headers[index]}, Actual header = {actual_header.text}"
 
     # GET ELEMENT METHODS --------------------------------------------------------------------------------------------
     # No Longer Needed -> since SeleniumDriver class has this functions getting the element

@@ -2,7 +2,7 @@
 import unittest
 
 # Import test classes
-from tests.login.archived_tests.TC001_login_test_backup_v3_1 import LoginTest
+from tests.archived_tests.TC001_login_test_backup_v3_1 import LoginTest
 
 # Get all tests from the test classes
 tc1 = unittest.TestLoader().loadTestsFromTestCase(LoginTest)
