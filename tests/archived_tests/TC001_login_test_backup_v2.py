@@ -13,7 +13,7 @@ import utils.custom_logger as cl
 import logging
 
 
-@pytest.mark.usefixtures("onetime_setup", "set_up")
+@pytest.mark.usefixtures("setup", "method_setup")
 class LoginTest(unittest.TestCase):
 
     log = cl.custom_logger(logging.INFO)

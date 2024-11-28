@@ -1,18 +1,27 @@
-# this usually called "basepage"
+"""
+@package base
 
+Base Page class implementation
+It implements methods which are common to all the pages throughout the application
 
-import time
+This class needs to be inherited by all the page classes
+This should not be used by creating object instances
 
-from selenium.webdriver.common.by import By
+Example:
+    Class LoginPage(BasePage)
+"""
+
+from base.selenium_driver import SeleniumDriver
+from traceback import print_stack
+from utils.util import Util
+
+from utils import custom_logger as cl
+import logging
+
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
-
-# packages for logger
-# import utils.custom_logger
-from utils import custom_logger as cl
-import logging
 
 # for reports
 import time
@@ -20,82 +29,37 @@ import os
 
 from utils.config_reader import read_config
 
-
-# Custom Class - wrapper for selenium webdriver
-# Every Page Class -> should inherit from SeleniumDriver()
-# i.e: LoginPage(SeleniumDriver)
-
-class SeleniumDriver:
+class BasePage(SeleniumDriver):
 
     log = cl.custom_logger(logging.DEBUG)
 
-    # like constructor
     def __init__(self, driver):
+        """
+        Inits BasePage class
+
+        Returns:
+            None
+        """
+        super(BasePage, self).__init__(driver)
         self.driver = driver
+        self.util = Util()
         self.base_url = read_config("url", "base_url")
 
 
-    # ===== METHODS BELOW ===== #
-    # def open_url(self, base_url):
-    #     self.driver.get(base_url)
-
     # positional argument -> by default it will open the base_url
     # if url is provided, it will open the provided url
-    def open_url_removed(self, url_path=""):
+    def open_url(self, url_path=""):
         url = self.base_url + url_path
         self.driver.get(url)
 
-    def screenshot(self, result_message):
-        """
-        Takes the screenshot of the current open web
-        """
-        print()
-        filename = result_message + "." + str(round(time.time() * 1000)) + ".png" #png is more compressed / smaller file
-        screenshot_directory = "../reports/"
-        relative_filename = screenshot_directory + filename  # this is the filepath
 
-        current_directory = os.path.dirname(__file__)
-
-        destination_file = os.path.join(current_directory, relative_filename)
-        destination_directory = os.path.join(current_directory, screenshot_directory)
-
-        try:
-            # if "reports" folder not exist, create a folder
-            if not os.path.exists(destination_directory):
-                os.makedirs(destination_directory)
-            self.driver.save_screenshot(destination_file)
-            self.log.info("Screenshot save to directory: " + destination_file)
-        except:
-            self.log.error("### Exception Occurred ###")
-            print_stack()
-
-
-    def get_title_removed(self):
+    def get_title(self):
         return self.driver.title
-
-    # def get_by_type(self, locator_type):
-    #     locator_type = locator_type.lower()
-    #     if locator_type == "id":
-    #         return By.ID
-    #     elif locator_type == "name":
-    #         return By.NAME
-    #     elif locator_type == "class":
-    #         return By.CLASS_NAME
-    #     elif locator_type == "link":
-    #         return By.LINK_TEXT
-    #     elif locator_type == "css":
-    #         return By.CSS_SELECTOR
-    #     elif locator_type == "xpath":
-    #         return By.XPATH
-    #     else:
-    #         # print("Locator type " + locator_type + " is not supported.")
-    #         self.log.info("Locator type " + locator_type + " is not supported.")
-    #     return False
 
 
     # (LOCATOR, LOCATOR_TYPE)
     # def get_element(self, locator, locator_type="xpath"):
-    def get_element_removed(self, locator):
+    def get_element(self, locator):
         element = None
         try:
             # locator_type = locator_type.lower()
@@ -109,11 +73,11 @@ class SeleniumDriver:
             # self.log.info("Element found with locator: " +str(locator))
         except:
             # print("Element not found with locator: " +locator + " and locator_type: " +locator_type)
-            self.log.info("Element not found with locator: " +str(locator))
+            self.log.info("Element not found with locator: " + str(locator))
         return element
 
 
-    def get_element_list_removed(self, locator):
+    def get_element_list(self, locator):
         """
         NEW METHOD
         Get list of elements
@@ -129,8 +93,31 @@ class SeleniumDriver:
         return element
 
 
+
+
+
+
+
+    def verify_page_title(self, title_to_verify):
+        """
+        Verify the page Title
+
+        Parameters:
+            title_to_verify: Title on the page that needs to be verified
+        """
+        try:
+            actual_title = self.get_title()
+            print(">>> actual page title = {}".format(actual_title))
+            print(">>> expected page title = {}".format(title_to_verify))
+            return self.util.verify_text_contains(actual_title, title_to_verify)
+        except:
+            self.log.error("Failed to get page title")
+            print_stack()
+            return False
+
+
     # def element_click(self, locator, locator_type="xpath"):
-    def element_click_removed(self, locator=""):
+    def element_click(self, locator=""):
         """
         Click on an element -> MODIFIED
         Either provide element or a combination of locator and locatorType
@@ -146,10 +133,7 @@ class SeleniumDriver:
             print_stack()
 
 
-    # cannot use "send_keys" -> it is existing function
-    # original from tutorial -> "sendKeys"
-    # def send_text(self, text, locator, locator_type="xpath"):
-    def send_text_removed(self, text, locator=""):
+    def send_text(self, text, locator=""):
         """
         Send keys to an element -> MODIFIED
         Either provide element or a combination of locator and locatorType
@@ -165,20 +149,7 @@ class SeleniumDriver:
             print_stack()
 
 
-    # def get_text(self, locator, locator_type="xpath"):
-    #     try:
-    #         element = self.get_element(locator, locator_type)
-    #         text = element.text
-    #         # print("Get text on element with locator: " + locator + " locator Type: " + locator_type)
-    #         self.log.info("Get text on element with locator: " + locator + " locator Type: " + locator_type)
-    #         return text
-    #     except:
-    #         # print("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
-    #         self.log.info("Cannot get text on the element with locator: " + locator + " locator Type: " + locator_type)
-    #         print_stack()
-
-
-    def get_text_removed(self, locator="", info=""):
+    def get_text(self, locator="", info=""):
         """
         NEW METHOD
         Get 'Text' on an element
@@ -206,7 +177,7 @@ class SeleniumDriver:
 
 
     # def is_element_present(self, locator, locator_type="xpath"):
-    def is_element_present_removed(self, locator=""):
+    def is_element_present(self, locator=""):
         """
         Check if element is present -> MODIFIED
         Either provide element or a combination of locator and locatorType
@@ -229,7 +200,7 @@ class SeleniumDriver:
             self.log.info("Element not found")
             return False
 
-    def is_element_displayed_removed(self, locator=""):
+    def is_element_displayed(self, locator=""):
         """
         NEW METHOD
         Check if element is displayed
@@ -250,7 +221,7 @@ class SeleniumDriver:
 
 
     # check list of elements
-    def element_presence_check_removed(self, locator):
+    def element_presence_check(self, locator):
         try:
             element_list = self.driver.find_elements(*locator)
             if len(element_list) > 0:
@@ -268,7 +239,7 @@ class SeleniumDriver:
 
 
     # RETURN ELEMENT
-    def wait_for_element_removed(self, locator, timeout=10, poll_frequency=0.5):
+    def wait_for_element(self, locator, timeout=10, poll_frequency=0.5):
         element = None
         try:
             # by_type = self.get_by_type(locator_type)
@@ -292,7 +263,7 @@ class SeleniumDriver:
         return element
 
 
-    def web_scroll_removed(self, direction="down"):
+    def web_scroll(self, direction="down"):
         """
         NEW METHOD
         """

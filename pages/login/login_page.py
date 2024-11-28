@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 # -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
 from utils import custom_logger as cl
 import logging
-from base.basepage import BasePage
+from base.base_page import BasePage
 from utils.report_status import ReportStatus
 
 

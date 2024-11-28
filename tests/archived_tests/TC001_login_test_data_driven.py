@@ -10,7 +10,7 @@ from ddt import ddt, data, unpack
 
 
 
-@pytest.mark.usefixtures("onetime_setup", "set_up")
+@pytest.mark.usefixtures("setup", "method_setup")
 @ddt
 class LoginTestDataDriven(unittest.TestCase):
 

@@ -11,7 +11,7 @@ import logging
 
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("onetime_setup", "set_up")
+@pytest.mark.usefixtures("setup", "method_setup")
 class TestDashboardUIVerification(unittest.TestCase):
 
     # @pytest.mark.order(1)
