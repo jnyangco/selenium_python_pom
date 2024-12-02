@@ -1,10 +1,9 @@
 import time
 import unittest
-from selenium import webdriver
 import pytest
 
 # pages
-from pages.login.login_page import LoginPage
+from pages.login_page import LoginPage
 from pages.dashboard.dashboard_page import DashboardPage
 from utils.report_status import ReportStatus
 # install "pytest-order" package

@@ -1,6 +1,5 @@
-import time
 import unittest
-from pages.login.login_page import LoginPage
+from pages.login_page import LoginPage
 import pytest
 from utils.report_status import ReportStatus
 from pages.dashboard.dashboard_page import DashboardPage

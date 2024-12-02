@@ -45,7 +45,7 @@ class SeleniumDriver:
         url = self.base_url + url_path
         self.driver.get(url)
 
-    def screenshot(self, result_message):
+    def screenshot_removed(self, result_message):
         """
         Takes the screenshot of the current open web
         """

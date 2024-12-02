@@ -29,7 +29,7 @@ import os
 
 from utils.config_reader import read_config
 
-class BasePage(SeleniumDriver):
+class BasePage:
 
     log = cl.custom_logger(logging.DEBUG)
 
@@ -40,10 +40,10 @@ class BasePage(SeleniumDriver):
         Returns:
             None
         """
-        super(BasePage, self).__init__(driver)
+        # super(BasePage, self).__init__(driver)
         self.driver = driver
-        self.util = Util()
         self.base_url = read_config("url", "base_url")
+        self.util = Util()
 
 
     # positional argument -> by default it will open the base_url
@@ -274,3 +274,27 @@ class BasePage(SeleniumDriver):
         if direction == "down":
             # Scroll Down
             self.driver.execute_script("window.scrollBy(0, 1000);")
+
+    def screenshot(self, result_message):
+        """
+        Takes the screenshot of the current open web
+        """
+        print()
+        filename = result_message + "." + str(round(time.time() * 1000)) + ".png" #png is more compressed / smaller file
+        screenshot_directory = "../reports/"
+        relative_filename = screenshot_directory + filename  # this is the filepath
+
+        current_directory = os.path.dirname(__file__)
+
+        destination_file = os.path.join(current_directory, relative_filename)
+        destination_directory = os.path.join(current_directory, screenshot_directory)
+
+        try:
+            # if "reports" folder not exist, create a folder
+            if not os.path.exists(destination_directory):
+                os.makedirs(destination_directory)
+            self.driver.save_screenshot(destination_file)
+            self.log.info("Screenshot save to directory: " + destination_file)
+        except:
+            self.log.error("### Exception Occurred ###")
+            print_stack()

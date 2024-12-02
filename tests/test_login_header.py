@@ -1,16 +1,10 @@
-import time
-import unittest
-from selenium import webdriver
 import pytest
 # install "pytest-order" package
 # pages
-from pages.login.login_page import LoginPage
-from pages.dashboard.dashboard_page import DashboardPage
-from utils.report_status import ReportStatus
+from pages.login_page import LoginPage
 import utils.custom_logger as cl
 from utils.util import Util
 import logging
-from utils.config_reader import read_config as data
 
 log = cl.custom_logger(logging.INFO)
 
