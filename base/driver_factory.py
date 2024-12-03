@@ -11,11 +11,11 @@ Example:
 import traceback
 from selenium import webdriver
 
-class WebDriverFactory():
+class DriverFactory:
 
     def __init__(self, browser):
         """
-        Inits WebDriverFactory class
+        Inits DriverFactory class
 
         Returns:
             None
@@ -40,7 +40,7 @@ class WebDriverFactory():
     """
 
 
-    def get_web_driver_instance(self):
+    def get_driver_instance(self):
         """
        Get WebDriver Instance based on the browser configuration
 
@@ -51,23 +51,21 @@ class WebDriverFactory():
         # baseURL = "https://letskodeit.teachable.com/"
         # baseURL = "https://opensource-demo.orangehrmlive.com"
 
-        if self.browser == "iexplorer":
-            # Set ie driver
-            driver = webdriver.Ie()
+        if self.browser == "chrome":
+            driver = webdriver.Chrome()
         elif self.browser == "firefox":
             driver = webdriver.Firefox()
-        elif self.browser == "chrome":
-            # Set chrome driver
-            driver = webdriver.Chrome()
+        elif self.browser == "iexplorer":
+            driver = webdriver.Ie()
         else:
-            # Set chrome driver
-            driver = webdriver.Chrome()
+            raise ValueError(f"Unsupported browser: {self.browser}")
 
-        # Setting Driver Implicit Time out for An Element
-        driver.implicitly_wait(5)
 
-        # Maximize the window
-        driver.maximize_window()
+        # # Setting Driver Implicit Time out for An Element
+        # driver.implicitly_wait(5)
+        #
+        # # Maximize the window
+        # driver.maximize_window()
         
         # Loading browser with App URL
         # driver.get(baseURL)

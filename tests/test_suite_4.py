@@ -4,6 +4,7 @@
 
 import pytest
 
+# ***NEED TO FIX -> other test open browser even deselected
 pytest.main([
     "-m", "smoke",                  # usings tags to run
     "--browser", "chrome"          # browser

@@ -1,12 +1,7 @@
-import time
-import unittest
-from selenium import webdriver
 import pytest
 # install "pytest-order" package
 # pages
-from pages.login.login_page import LoginPage
-from pages.dashboard.dashboard_page import DashboardPage
-from utils.report_status import ReportStatus
+from pages.login_page import LoginPage
 import utils.custom_logger as cl
 from utils.util import Util
 import logging
@@ -14,13 +9,13 @@ from utils.config_reader import read_config as data
 
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("onetime_setup", "set_up")
+# @pytest.mark.usefixtures("onetime_setup", "set_up")
+@pytest.mark.usefixtures("setup")
 class TestLogin:
 
     @pytest.mark.login
     def test_valid_login(self):
         login_page = LoginPage(self.driver)
-        util = Util()
 
         # Step 1: Login using valid username and password
         login_page.open_askomdch()
@@ -32,6 +27,7 @@ class TestLogin:
 
         # Step 2: Verify hello user message is correct
         login_page.verify_login_hello_user_message(username)
+
 
     @pytest.mark.login
     def test_invalid_login(self):

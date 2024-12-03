@@ -1,6 +1,5 @@
-import time
 import unittest
-from pages.login.login_page import LoginPage
+from pages.login_page import LoginPage
 import pytest
 from utils.report_status import ReportStatus
 from pages.dashboard.dashboard_page import DashboardPage
@@ -10,7 +9,7 @@ from ddt import ddt, data, unpack
 from utils.read_data import read_csv_data
 
 
-@pytest.mark.usefixtures("onetime_setup", "set_up")
+@pytest.mark.usefixtures("setup", "method_setup")
 @ddt
 class LoginTestDataDrivenCSVFile(unittest.TestCase):
 
