@@ -135,7 +135,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         actual_error_message = self.get_text(self._login_error_message)
         print(f">>> actual_error_message = {actual_error_message}")
         print(f">>> expected_error_message = {expected_error_message}")
-        self.util.wait(2, "Waiting for the error message")
+        self.wait_seconds(2, "Waiting for the error message")
 
         # if actual_error_message == expected_error_message:
         #     print("RETURN TRUE")
@@ -193,7 +193,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     def verify_user_is_logged_out(self):
         element = self.wait_for_element(self._login_logo, poll_frequency=1)
-        self.util.wait(2)
+        self.wait_seconds(2)
         if element is not None:
             return True
         else:
