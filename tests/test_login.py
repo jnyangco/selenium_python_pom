@@ -16,7 +16,6 @@ class TestLogin:
     @pytest.mark.login
     def test_valid_login(self):
         login_page = LoginPage(self.driver)
-        util = Util()
 
         # Step 1: Login using valid username and password
         login_page.open_askomdch()
@@ -28,6 +27,7 @@ class TestLogin:
 
         # Step 2: Verify hello user message is correct
         login_page.verify_login_hello_user_message(username)
+
 
     @pytest.mark.login
     def test_invalid_login(self):

@@ -17,6 +17,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     def __init__(self, driver):
         super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver/BasePage???) and providing the driver
         self.driver = driver
+        self.report = ReportStatus(self.driver)
 
     # Locators
     _header_menu_account = (By.XPATH, "//li[@id='menu-item-1237']/a")
@@ -31,14 +32,22 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     def verify_login_headers(self):
         headers = self.get_element_list(self._login_headers)
-        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
+        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Uss"]
 
-        assert len(headers) == len(expected_headers), \
-            f">>> Failed: Expected total elements = {len(expected_headers)}, Actual total elements = {len(headers)}"
+        try:
+            assert len(headers) == len(expected_headers), \
+                f">>> Failed: Expected total elements = {len(expected_headers)}, Actual total elements = {len(headers)}"
+        except:
+            self.report.mark(False, "Total header elements not matched")
+            # self.screenshot(">>> Step Failed - taking screenshot...")
 
-        for index, actual_header in enumerate(headers):
-            assert actual_header.text == expected_headers[index], \
-                f"Header text mismatch at index {index}. Expected header = {expected_headers[index]}, Actual header = {actual_header.text}"
+        try:
+            for index, actual_header in enumerate(headers):
+                assert actual_header.text == expected_headers[index], \
+                    f"Header text mismatch at index {index}. Expected header = {expected_headers[index]}, Actual header = {actual_header.text}"
+        except:
+            self.report.mark_final("test_login_headers", False, "Header elements not matched")
+            # self.screenshot(">>> Step Failed - taking screenshot...")
 
     # GET ELEMENT METHODS --------------------------------------------------------------------------------------------
     # No Longer Needed -> since SeleniumDriver class has this functions getting the element

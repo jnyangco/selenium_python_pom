@@ -5,8 +5,8 @@
 import pytest
 
 pytest.main([
-    "tests/login/test_login.py",             # using python files to run
-    "tests/login/test_login_header.py",    # using python files to run
+    "tests/test_login.py",             # using python files to run
+    "tests/test_login_header.py",    # using python files to run
     "--browser", "chrome",                   # browser
     "-n", "auto",                            # parallel run
     # "-m", "login"                          # usings tags to run

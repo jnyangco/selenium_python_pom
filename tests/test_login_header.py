@@ -14,7 +14,6 @@ class TestLoginHeader:
     @pytest.mark.smoke
     def test_login_header(self):
         login_page = LoginPage(self.driver)
-        util = Util()
 
         # Step 1: Validate header text are correct
         # Expected List = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]

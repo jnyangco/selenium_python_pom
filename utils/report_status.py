@@ -10,21 +10,24 @@ Example:
 """
 import utils.custom_logger as cl
 import logging
-from base.selenium_driver import SeleniumDriver
+# from base.selenium_driver import SeleniumDriver
 from traceback import print_stack
 
+from base.base_page import BasePage
 
-class ReportStatus(SeleniumDriver):
+# class ReportStatus(SeleniumDriver):
+class ReportStatus(BasePage):
 
     # log = cl.customLogger(logging.INFO)
     log = cl.custom_logger(logging.INFO)
 
     def __init__(self, driver):
         """
-        Inits CheckPoint class
+        Init CheckPoint class
         """
         super(ReportStatus, self).__init__(driver)
         self.resultList = []
+
 
     def set_result(self, result, result_message):
         try:
@@ -53,6 +56,7 @@ class ReportStatus(SeleniumDriver):
             print_stack()
             print(f"RESULT LIST = {self.resultList}")
 
+
     # CHECK IF TRUE or FALSE
     # mark (assert) -> if Pass (append PASS to the list), if Fail (append FAIL to the list)
     def mark(self, result, result_message):
@@ -60,6 +64,7 @@ class ReportStatus(SeleniumDriver):
         Mark the result of the verification point in a test case
         """
         self.set_result(result, result_message)
+
 
     # CHECK if TRUE or FALSE
     def mark_final(self, test_name, result, result_message):
