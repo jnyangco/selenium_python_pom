@@ -1,6 +1,7 @@
 # conftest.py -> should be placed on testcase folder level
 # ADDITIONAL INFO: conftest.py can be placed on the main project folder (not necessary to be inside the tests folder)
 # Configuration Test -> common pytest method
+import allure
 import pytest
 from selenium import webdriver
 from base.driver_factory import DriverFactory
@@ -9,6 +10,7 @@ from base.driver_factory import DriverFactory
 @pytest.fixture()
 def method_setup(): # method level setup (default scope)
     print("\n---------- Run before method (conftest.py) ----------")  # before method
+    # print(f">>> METHOD NAME = {request.node.name}")
     yield
     print("\nRun after method (conftest.py)")  # after method
 
@@ -36,6 +38,12 @@ def pytest_addoption(parser):
 def setup(request):  # --browser from command line
     print("\n========== Run one time setup (conftest.py) ==========")  # before method
 
+    # print(f">>> METHOD NAME = {request.node.name}")
+    # @allure.title("Test Case" + request.node.name)
+    # def test():
+        # pass
+
+
     """Fixture to initialize and quit WebDriver."""
     browser = request.config.getoption("--browser").lower()
     os_type = request.config.getoption("--os_type").lower()
@@ -52,6 +60,8 @@ def setup(request):  # --browser from command line
     # Maximize the window
     driver.maximize_window()
 
+
+    # request.cls -> the CLASS containing the Test
     if request.cls is not None:
         request.cls.driver = driver  # Attach driver to the test class -> i.e: TestLogin: (CLASS)
     """

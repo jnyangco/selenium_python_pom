@@ -13,6 +13,9 @@ Example:
 import traceback
 # from base.selenium_driver import SeleniumDriver
 from traceback import print_stack
+
+import allure
+
 from utils.util import Util
 
 from utils import custom_logger as cl
@@ -362,12 +365,14 @@ class BasePage:
             return True
 
 
+    # @allure.step("Wait for seconds")
     def wait_seconds(self, sec, info=""):
         """
         Put the program to wait for the specified amount of time
         """
         if info != "":
-            self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
+            # self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
+            self.log.info("Wait :: '" + str(sec) + "' seconds." + info)
         try:
             time.sleep(sec)
         except InterruptedError:

@@ -27,7 +27,7 @@ class TestLogin:
 
         # Step 2: Verify hello user message is correct
         login_page.verify_login_hello_user_message(username)
-        login_page.wait_seconds(4)
+        # login_page.wait_seconds(4)
 
 
     @pytest.mark.login

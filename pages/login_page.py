@@ -1,4 +1,6 @@
 import time
+
+import allure
 from selenium.webdriver.common.by import By
 # from base.selenium_driver import SeleniumDriver
 # -> import this log if you want to print this class "LoginPage" in the logs
@@ -76,7 +78,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # self.get_login_button().click()
         self.element_click(self._login_button)
 
-
+    @allure.step("Click header menu account")
     def click_header_menu_account(self):
         self.element_click(self._header_menu_account)
 
@@ -99,6 +101,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # self.open_url("/admin")  # "/admin" is optional - positional arguments
         self.open_url()
 
+    @allure.step("Open Askcomdch Website")
     def open_askomdch(self):
         # self.open_url("https://askomdch.com")
         # self.open_url("/admin")  # "/admin" is optional - positional arguments
@@ -113,7 +116,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     def open_griffin(self):
         self.open_url("https://www.griffin-test.com")
 
-
+    @allure.step("Login using username and password")
     def login(self, username, password):
         # self.driver.get("www.google.com")  # not working here
         # self.clear_fields()
@@ -139,7 +142,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         result = self.get_text(self._login_error_message)
         return result
 
-
+    @allure.step("Verify login error message")
     def verify_login_error_message(self, expected_error_message):
         actual_error_message = self.get_text(self._login_error_message)
         print(f">>> actual_error_message = {actual_error_message}")
@@ -182,6 +185,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         return self.verify_page_title("OrangeHRM")
 
 
+    @allure.step("Verify login 'hello <user>' message")
     def verify_login_hello_user_message(self, expected_message):
         actual_message = self.get_text(self._login_hello_user_message)
         assert actual_message == expected_message, \
