@@ -695,3 +695,168 @@
 12/06/2024 11:58:45 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
 12/06/2024 11:58:45 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733547525354.png
 12/06/2024 11:58:45 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 01:14:23 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 01:14:23 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 01:14:24 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733595263898.png
+12/07/2024 01:14:24 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:39:27 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:39:27 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:39:27 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:39:30 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:39:30 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:39:30 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:39:30 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 02:39:30 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:39:30 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 02:39:37 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:39:37 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:39:37 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:39:40 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:39:40 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:39:40 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:39:40 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 02:39:40 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:39:40 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 02:39:40 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 02:39:44 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 02:39:44 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 02:39:45 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733600384975.png
+12/07/2024 02:39:45 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:40:20 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:40:20 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:40:20 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:40:24 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:40:24 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:40:24 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:40:24 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 02:40:24 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:40:24 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 02:40:31 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:40:31 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:40:31 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:40:34 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:40:34 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:40:34 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:40:34 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 02:40:34 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:40:34 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 02:40:34 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 02:40:38 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 02:40:38 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 02:40:39 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733600438788.png
+12/07/2024 02:40:39 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:44:08 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 02:44:08 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 02:44:08 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733600648560.png
+12/07/2024 02:44:08 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:44:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:44:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:44:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:44:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:44:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:44:10 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:44:13 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 02:44:13 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:44:13 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 02:44:13 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 02:44:13 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:44:13 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 02:44:13 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:44:13 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 02:47:00 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 02:47:00 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 02:47:01 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733600820874.png
+12/07/2024 02:47:01 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:47:02 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:47:02 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:47:02 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:47:02 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:47:02 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:47:02 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:47:05 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:47:05 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:47:05 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:47:05 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 02:47:05 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:47:05 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 02:47:05 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 02:47:06 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:47:06 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:47:06 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:47:06 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 02:47:06 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:47:06 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 02:49:33 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 02:49:33 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 02:49:33 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733600973352.png
+12/07/2024 02:49:33 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 02:49:34 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:49:34 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:49:34 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 02:49:34 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:49:34 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 02:49:34 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 02:49:37 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 02:49:37 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:49:37 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 02:49:37 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 02:49:37 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 02:49:37 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 02:49:37 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 02:49:37 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 03:01:00 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 03:01:00 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 03:01:00 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733601660224.png
+12/07/2024 03:01:00 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 03:01:01 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 03:01:01 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 03:01:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 03:01:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 03:01:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 03:01:01 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 03:01:04 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 03:01:04 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 03:01:04 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 03:01:04 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 03:01:04 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 03:01:04 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 03:01:04 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 03:01:05 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 03:01:05 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 03:01:05 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 03:01:05 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 03:01:05 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 03:01:05 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 03:05:36 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 03:05:36 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 03:05:37 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733601936956.png
+12/07/2024 03:05:37 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 03:05:38 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 03:05:38 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 03:05:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 03:05:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 03:05:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 03:05:38 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 03:05:41 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 03:05:41 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 03:05:41 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 03:05:41 PM - LoginPage - INFO: Wait :: '2' seconds for Waiting for the error message
+12/07/2024 03:05:41 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 03:05:41 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 03:05:41 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 03:05:41 PM - LoginPage - INFO: The text is :: 'askomdch1'
