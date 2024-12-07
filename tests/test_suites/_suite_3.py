@@ -10,8 +10,8 @@ pytest.main([
     "--browser", "chrome",                   # browser
     "-n", "auto",                            # parallel run
     # "-m", "regression",                          # usings tags to run
-    "-v",                                     # verbose
-    "--alluredir=reports/allure_report"
+    "-s", "-v",                                     # print, verbose
+    # "--alluredir=reports/allure_report"  # for allure report
     ])
 
 
