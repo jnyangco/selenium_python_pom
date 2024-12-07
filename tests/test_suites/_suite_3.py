@@ -9,13 +9,15 @@ pytest.main([
     "tests/test_login_header.py",    # using python files to run
     "--browser", "chrome",                   # browser
     "-n", "auto",                            # parallel run
-    # "-m", "login"                          # usings tags to run
-    "-v"                                     # verbose
+    # "-m", "regression",                          # usings tags to run
+    "-v",                                     # verbose
+    "--alluredir=reports/allure_report"
     ])
+
 
 
 # NOTE: "-m", "login" -> OPTIONAL - we can run just to specify test cases using .py files (without @pytest.mark.<custom_mark_name>)
 # "-m", "login" -> useful as @tags to group tests
-
+# can run specific file + tag (i.e: tests/test_login.py + -m smoke"
 
 
