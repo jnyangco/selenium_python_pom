@@ -1225,3 +1225,38 @@
 12/07/2024 03:59:38 PM - LoginPage - DEBUG: After finding element, size is: 9
 12/07/2024 03:59:38 PM - LoginPage - INFO: Getting text on element :: 
 12/07/2024 03:59:38 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 04:10:49 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 04:10:49 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 04:10:49 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 04:10:49 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/07/2024 04:10:49 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/07/2024 04:10:49 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/07/2024 04:10:52 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/07/2024 04:10:52 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 04:10:52 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/07/2024 04:10:52 PM - LoginPage - INFO: Wait :: '2' seconds.Waiting for the error message
+12/07/2024 04:10:52 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: In locator condition
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: Before finding text
+12/07/2024 04:10:52 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/07/2024 04:10:52 PM - LoginPage - INFO: Getting text on element :: 
+12/07/2024 04:10:52 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/07/2024 04:11:13 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 04:11:13 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 04:11:13 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733605873161.png
+12/07/2024 04:11:13 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 04:13:41 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 04:13:41 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 04:13:41 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733606021226.png
+12/07/2024 04:13:41 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 04:14:56 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 04:14:56 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 04:14:57 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733606096708.png
+12/07/2024 04:14:57 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/07/2024 04:15:50 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/07/2024 04:15:50 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/07/2024 04:15:50 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733606150634.png
+12/07/2024 04:15:50 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###

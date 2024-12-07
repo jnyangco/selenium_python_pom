@@ -79,7 +79,7 @@ class ReportStatus(BasePage):
         if "FAIL" in self.resultList:
             self.log.error(test_name + " ### TEST CASE FAILED ###")
             self.resultList.clear()
-            assert True == False  # this it to force failed (since we knew test is failed "FAIL" appended in resultlist)
+            assert True == False, result_message  # this it to force failed (since we knew test is failed "FAIL" appended in resultlist)
         else:
             self.log.info(test_name + " ### TEST CASE PASSED ###")
             self.resultList.clear()
