@@ -30,7 +30,7 @@ class TestLogin:
         login_page.wait_seconds(4)
 
 
-    @pytest.mark.regression
+    @pytest.mark.login
     def test_invalid_login(self):
         login_page = LoginPage(self.driver)
 
