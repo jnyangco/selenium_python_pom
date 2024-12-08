@@ -13,7 +13,7 @@ log = cl.custom_logger(logging.INFO)
 class TestLoginHeader:
 
     @allure.title("Test Case: Test Login Header")
-    @pytest.mark.smoke
+    @pytest.mark.header
     def test_login_header(self):
         login_page = LoginPage(self.driver)
 

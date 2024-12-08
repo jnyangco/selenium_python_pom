@@ -1577,3 +1577,132 @@
 12/08/2024 05:05:20 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_postcode']")
 12/08/2024 05:05:20 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_email']")
 12/08/2024 05:05:25 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//button[@id='place_order']")
+12/08/2024 05:12:05 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/08/2024 05:12:05 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/08/2024 05:12:05 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733695925253.png
+12/08/2024 05:12:05 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/08/2024 05:12:06 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:12:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:12:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:12:06 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1227']")
+12/08/2024 05:12:06 PM - StorePage - INFO: Send text on element with locator: ('xpath', "//input[@id='woocommerce-product-search-field-0']")
+12/08/2024 05:12:06 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:12:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:12:06 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:12:08 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//button[text()='Search']")
+12/08/2024 05:12:08 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//h2[text()='Blue Shoes']/following::a[text()='Add to cart'][1]")
+12/08/2024 05:12:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/08/2024 05:12:10 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:12:10 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/08/2024 05:12:10 PM - LoginPage - INFO: Wait :: '2' seconds.Waiting for the error message
+12/08/2024 05:12:10 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:12:10 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/08/2024 05:12:10 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:12:10 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/08/2024 05:12:11 PM - Header - INFO: Clicked on element with locator: ('xpath', "(//a[@title='View your shopping cart'])[1]")
+12/08/2024 05:12:13 PM - CartPage - INFO: Clicked on element with locator: ('xpath', "//div[@class='wc-proceed-to-checkout']/a")
+12/08/2024 05:12:13 PM - CheckoutPage - INFO: Element is displayed with locator: ('xpath', "//h1[text()='Checkout']")
+12/08/2024 05:12:13 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_first_name']")
+12/08/2024 05:12:13 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_last_name']")
+12/08/2024 05:12:13 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "(//span[@aria-label='Country / Region'])[1]")
+12/08/2024 05:12:14 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:12:15 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:12:16 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_address_1']")
+12/08/2024 05:12:16 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_city']")
+12/08/2024 05:12:16 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//span[@id='select2-billing_state-container']")
+12/08/2024 05:12:17 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:12:18 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:12:19 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_postcode']")
+12/08/2024 05:12:20 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_email']")
+12/08/2024 05:12:25 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//button[@id='place_order']")
+12/08/2024 05:14:34 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/08/2024 05:14:34 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/08/2024 05:14:34 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733696074079.png
+12/08/2024 05:14:34 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/08/2024 05:14:34 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1227']")
+12/08/2024 05:14:34 PM - StorePage - INFO: Send text on element with locator: ('xpath', "//input[@id='woocommerce-product-search-field-0']")
+12/08/2024 05:14:35 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:14:35 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:14:35 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:14:35 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:14:35 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:14:35 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:14:35 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//button[text()='Search']")
+12/08/2024 05:14:35 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//h2[text()='Blue Shoes']/following::a[text()='Add to cart'][1]")
+12/08/2024 05:14:39 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/08/2024 05:14:39 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:14:39 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/08/2024 05:14:39 PM - LoginPage - INFO: Wait :: '2' seconds.Waiting for the error message
+12/08/2024 05:14:39 PM - Header - INFO: Clicked on element with locator: ('xpath', "(//a[@title='View your shopping cart'])[1]")
+12/08/2024 05:14:39 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:14:39 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/08/2024 05:14:39 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:14:39 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/08/2024 05:14:40 PM - CartPage - INFO: Clicked on element with locator: ('xpath', "//div[@class='wc-proceed-to-checkout']/a")
+12/08/2024 05:14:40 PM - CheckoutPage - INFO: Element is displayed with locator: ('xpath', "//h1[text()='Checkout']")
+12/08/2024 05:14:40 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_first_name']")
+12/08/2024 05:14:40 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_last_name']")
+12/08/2024 05:14:40 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "(//span[@aria-label='Country / Region'])[1]")
+12/08/2024 05:14:42 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:14:43 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:14:44 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_address_1']")
+12/08/2024 05:14:44 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_city']")
+12/08/2024 05:14:44 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//span[@id='select2-billing_state-container']")
+12/08/2024 05:14:45 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:14:46 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:14:47 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_postcode']")
+12/08/2024 05:14:47 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_email']")
+12/08/2024 05:14:49 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//button[@id='place_order']")
+12/08/2024 05:16:42 PM - LoginPage - INFO: Element list found with locator: ('xpath', "(//ul[@id='ast-hf-menu-1'])[1]/li")
+12/08/2024 05:16:42 PM - ReportStatus - ERROR: ### VERIFICATION FAILED :: + Header elements not matched
+12/08/2024 05:16:42 PM - ReportStatus - INFO: Screenshot save to directory: /Users/jerome/Documents/Code/Selenium Python/selenium_python_pom/base/../reports/Header elements not matched.1733696202284.png
+12/08/2024 05:16:42 PM - ReportStatus - ERROR: test_login_headers ### TEST CASE FAILED ###
+12/08/2024 05:16:43 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:16:43 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:16:43 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1227']")
+12/08/2024 05:16:43 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:16:43 PM - StorePage - INFO: Send text on element with locator: ('xpath', "//input[@id='woocommerce-product-search-field-0']")
+12/08/2024 05:16:43 PM - Header - INFO: Clicked on element with locator: ('xpath', "//li[@id='menu-item-1237']/a")
+12/08/2024 05:16:44 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='username']")
+12/08/2024 05:16:44 PM - LoginPage - INFO: Send text on element with locator: ('xpath', "//input[@id='password']")
+12/08/2024 05:16:44 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//button[text()='Search']")
+12/08/2024 05:16:44 PM - StorePage - INFO: Clicked on element with locator: ('xpath', "//h2[text()='Blue Shoes']/following::a[text()='Add to cart'][1]")
+12/08/2024 05:16:46 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:16:46 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:16:46 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:16:46 PM - LoginPage - DEBUG: After finding element, size is: 92
+12/08/2024 05:16:46 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:16:46 PM - LoginPage - INFO: The text is :: 'Error: The password you entered for the username askomdch1 is incorrect. Lost your password?'
+12/08/2024 05:16:46 PM - LoginPage - INFO: Wait :: '2' seconds.Waiting for the error message
+12/08/2024 05:16:47 PM - LoginPage - INFO: Clicked on element with locator: ('xpath', "//button[@value='Log in']")
+12/08/2024 05:16:47 PM - LoginPage - DEBUG: In locator condition
+12/08/2024 05:16:47 PM - LoginPage - DEBUG: Before finding text
+12/08/2024 05:16:47 PM - LoginPage - DEBUG: After finding element, size is: 9
+12/08/2024 05:16:47 PM - LoginPage - INFO: Getting text on element :: 
+12/08/2024 05:16:47 PM - LoginPage - INFO: The text is :: 'askomdch1'
+12/08/2024 05:16:48 PM - Header - INFO: Clicked on element with locator: ('xpath', "(//a[@title='View your shopping cart'])[1]")
+12/08/2024 05:16:50 PM - CartPage - INFO: Clicked on element with locator: ('xpath', "//div[@class='wc-proceed-to-checkout']/a")
+12/08/2024 05:16:50 PM - CheckoutPage - INFO: Element is displayed with locator: ('xpath', "//h1[text()='Checkout']")
+12/08/2024 05:16:50 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_first_name']")
+12/08/2024 05:16:50 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_last_name']")
+12/08/2024 05:16:50 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "(//span[@aria-label='Country / Region'])[1]")
+12/08/2024 05:16:51 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:16:52 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:16:53 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_address_1']")
+12/08/2024 05:16:53 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_city']")
+12/08/2024 05:16:53 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//span[@id='select2-billing_state-container']")
+12/08/2024 05:16:54 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@class='select2-search__field']")
+12/08/2024 05:16:55 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//input[@class='select2-search__field']/following::span[1]")
+12/08/2024 05:16:56 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_postcode']")
+12/08/2024 05:16:56 PM - CheckoutPage - INFO: Send text on element with locator: ('xpath', "//input[@id='billing_email']")
+12/08/2024 05:16:58 PM - CheckoutPage - INFO: Clicked on element with locator: ('xpath', "//button[@id='place_order']")

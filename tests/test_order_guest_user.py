@@ -12,11 +12,11 @@ from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
 @pytest.mark.usefixtures("setup")
-class TestLogin:
+class TestOrderGuestUser:
 
-    @allure.title("Test Case: Test Order Product - Blue Shoes")
-    @pytest.mark.order
-    def test_order_product(self):
+    @allure.title("Test Case: Test Order 'Blue Shoes' using Guest User")
+    @pytest.mark.checkout
+    def test_order_guest_user(self):
         login_page = LoginPage(self.driver)
         util = Util()
 
@@ -51,11 +51,11 @@ class TestLogin:
         checkout_page = CheckoutPage(self.driver)
         checkout_page.verify_checkout_page()
         checkout_page.guest_fill_up_checkout_page("Fname", "Lname", "United States", "123 Test Address", "Test City", "New York", "12345", "guest_user1@test.com")
-        checkout_page.wait_seconds(5)
+        checkout_page.wait_seconds(2)
 
         # Step 8: Click place order button
         checkout_page.click_place_order()
-        checkout_page.wait_seconds(10)
+        checkout_page.wait_seconds(2)
 
 
 
