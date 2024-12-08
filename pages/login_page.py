@@ -110,20 +110,17 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # self.open_url("/admin")  # "/admin" is optional - positional arguments
         self.open_url()
 
-    @allure.step("Open Askcomdch Website")
-    def open_askomdch(self):
-        # self.open_url("https://askomdch.com")
-        # self.open_url("/admin")  # "/admin" is optional - positional arguments
-        self.open_url()
-
     def open_publication(self):
         self.open_url("https://www.publication-test.com")
 
     def open_cms(self):
         self.open_url("https://www.cms-test.com")
 
-    def open_griffin(self):
-        self.open_url("https://www.griffin-test.com")
+    @allure.step("Open Askcomdch Website")
+    def open_askomdch(self):
+        # self.open_url("https://askomdch.com")
+        # self.open_url("/admin")  # "/admin" is optional - positional arguments
+        self.open_url()
 
     @allure.step("Login using username and password")
     def login(self, username, password):
@@ -134,19 +131,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         time.sleep(2)
         self.click_login_button()
 
-    def login_v2(self, username, password):
-        self.send_text(username, self._email_textbox)
-        self.send_text(password, self._password_textbox)
-        time.sleep(2)
-        self.element_click(self._login_button)
-
-
-    # def verify_login_successful(self):
-    #     result = self.is_element_present(self._user_icon)
-    #     self.util.sleep(2)
-    #     return result
-
-
+    @allure.step("Verify login failed")
     def verify_login_failed(self):
         result = self.get_text(self._login_error_message)
         return result
@@ -184,7 +169,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         password_field = self.get_element(self._password_textbox)
         password_field.clear()
 
-
+    @allure.step("Verify login page title")
     def verify_login_page_title(self):
         # time.sleep(2)
         # if self.get_title() == "OrangeHRM1":
@@ -201,18 +186,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
             f">>> Failed Step: actual_message = {actual_message}, expected_message = {expected_message}"
 
 
-    def verify_login_page_title_v2(self):
-        # time.sleep(2)
-        # if self.get_title() == "OrangeHRM1":
-        #     return True
-        # else:
-        #     return False
-        report = ReportStatus(self.driver)
-        result = self.verify_page_title("OrangeHRM1")
-        print(f">>> RESULT = {result}")
-        report.mark(result, "Page Title Verified")
-
-
+    @allure.step("Verify user is logged out")
     def verify_user_is_logged_out(self):
         element = self.wait_for_element(self._login_logo, poll_frequency=1)
         self.wait_seconds(2)

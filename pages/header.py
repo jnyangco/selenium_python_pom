@@ -20,6 +20,7 @@ class Header(BasePage):
     # _login_headers = (By.XPATH, "(//ul[@id='ast-hf-menu-1'])[1]/li")
     _header_account = (By.XPATH, "//li[@id='menu-item-1237']/a")
     _header_store = (By.XPATH, "//li[@id='menu-item-1227']")
+    _header_cart = (By.XPATH, "(//a[@title='View your shopping cart'])[1]")
 
 
     # Actions for the header elements
@@ -31,6 +32,10 @@ class Header(BasePage):
     @allure.step("Click Store menu in the header")
     def click_header_store(self):
         self.element_click(self._header_store)
+
+    @allure.step("Click Cart in the header")
+    def click_header_cart(self):
+        self.element_click(self._header_cart)
 
 
 
