@@ -1,3 +1,4 @@
+import allure
 import pytest
 # install "pytest-order" package
 # pages
@@ -11,6 +12,7 @@ log = cl.custom_logger(logging.INFO)
 @pytest.mark.usefixtures("setup")
 class TestLoginHeader:
 
+    @allure.title("Test Case: Test Login Header")
     @pytest.mark.smoke
     def test_login_header(self):
         login_page = LoginPage(self.driver)
@@ -19,5 +21,6 @@ class TestLoginHeader:
         # Expected List = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
         login_page.open_askomdch()
         login_page.verify_login_headers()
+        login_page.header.click_header_store()
 
 

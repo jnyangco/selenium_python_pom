@@ -1,3 +1,4 @@
+import allure
 import pytest
 # install "pytest-order" package
 # pages
@@ -13,6 +14,9 @@ log = cl.custom_logger(logging.INFO)
 @pytest.mark.usefixtures("setup")
 class TestLogin:
 
+
+    @allure.title("Test Case: Test Valid Login")
+    # @allure.description("This is to test the valid login functionality")
     @pytest.mark.login
     def test_valid_login(self):
         login_page = LoginPage(self.driver)
@@ -20,7 +24,8 @@ class TestLogin:
 
         # Step 1: Login using valid username and password
         login_page.open_askomdch()
-        login_page.click_header_menu_account()
+        # login_page.click_header_menu_account()
+        login_page.header.click_header_account()
         username = data("credentials","username")
         password = data("credentials","password")
         login_page.login(username, password)
@@ -30,13 +35,16 @@ class TestLogin:
         # login_page.wait_seconds(4)
 
 
+    @allure.title("Test Case: Test Invalid Login")
+    # @allure.description("This is to test the invalid login functionality")
     @pytest.mark.login
     def test_invalid_login(self):
         login_page = LoginPage(self.driver)
 
         # Step 1: Login using invalid username and password
         login_page.open_askomdch()
-        login_page.click_header_menu_account()
+        # login_page.click_header_menu_account()
+        login_page.header.click_header_account()
         username = data("credentials","username")
         invalid_password = "Password#387465"
         login_page.login(username, invalid_password)

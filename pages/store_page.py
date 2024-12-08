@@ -1,9 +1,6 @@
 import time
 import allure
 from selenium.webdriver.common.by import By
-# from base.selenium_driver import SeleniumDriver
-# -> import this log if you want to print this class "LoginPage" in the logs
-# -> put this code before __init__ below -> log = cl.custom_logger(logging.DEBUG)
 from utils import custom_logger as cl
 import logging
 from base.base_page import BasePage
@@ -11,8 +8,7 @@ from utils.report_status import ReportStatus
 from pages.header import Header
 
 
-# class LoginPage(SeleniumDriver): # inherit SeleniumDriver
-class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
+class StorePage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
     log = cl.custom_logger(logging.DEBUG)
 
@@ -20,22 +16,21 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         super().__init__(driver)  # calling __init__ method of superclass (SeleniumDriver/BasePage???) and providing the driver
         self.driver = driver
         self.report = ReportStatus(self.driver)
-        self.header = Header(self.driver) # Reuse the Header class
+        self.header = Header(self.driver)
 
-    # Locators ========================================================================================================
-    # _header_account = (By.XPATH, "//li[@id='menu-item-1237']/a")
+    # Locators
+    _header_menu_account = (By.XPATH, "//li[@id='menu-item-1237']/a")
     _email_textbox = (By.XPATH, "//input[@id='username']")
     _password_textbox = (By.XPATH, "//input[@id='password']")
     _login_button = (By.XPATH, "//button[@value='Log in']")
     _login_hello_user_message = (By.XPATH, "//div[@class='woocommerce-MyAccount-content']/p/strong[1]")
-
     _login_error_message = (By.XPATH, "//ul[@class='woocommerce-error']/li") # Invalid credentials
     _login_headers = (By.XPATH, "(//ul[@id='ast-hf-menu-1'])[1]/li")
     _header_store = (By.XPATH, "//li[@id='menu-item-1227']")
 
+    # _textbox_search_product = (By.XPATH, "")
 
 
-    # Actions =========================================================================================================
     @allure.step("Verify login headers are correct")
     def verify_login_headers(self):
         headers = self.get_element_list(self._login_headers)
@@ -56,17 +51,6 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
             self.report.mark_final("test_login_headers", False, "Header elements not matched")
             # self.screenshot(">>> Step Failed - taking screenshot...")
 
-    # GET ELEMENT METHODS --------------------------------------------------------------------------------------------
-    # No Longer Needed -> since SeleniumDriver class has this functions getting the element
-    # def get_username_field(self):
-    #     return self.driver.find_element(By.XPATH, self._email_field)
-    #
-    # def get_password_field(self):
-    #     return self.driver.find_element(By.XPATH, self._password_field)
-    #
-    # def get_login_button(self):
-    #     return self.driver.find_element(By.XPATH, self._login_button)
-
 
     # ACTION ---------------------------------------------------------------------------------------------------------
     def enter_username(self, email):
@@ -74,22 +58,10 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.send_text(email, self._email_textbox) # locator_type optional -> default value is xpath
 
 
-    def enter_password(self, password):
-        # self.get_password_field().send_keys(password)
-        self.send_text(password, self._password_textbox)
-
-
     def click_login_button(self):
         # self.get_login_button().click()
         self.element_click(self._login_button)
 
-    # @allure.step("Click header menu account")
-    # def click_header_menu_account(self):
-    #     self.element_click(self._header_account)
-
-    # @allure.step("Click header store")
-    # def click_header_store(self):
-    #     self.element_click(self._header_store)
 
 
 
@@ -116,14 +88,6 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         # self.open_url("/admin")  # "/admin" is optional - positional arguments
         self.open_url()
 
-    def open_publication(self):
-        self.open_url("https://www.publication-test.com")
-
-    def open_cms(self):
-        self.open_url("https://www.cms-test.com")
-
-    def open_griffin(self):
-        self.open_url("https://www.griffin-test.com")
 
     @allure.step("Login using username and password")
     def login(self, username, password):
@@ -141,15 +105,6 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.element_click(self._login_button)
 
 
-    # def verify_login_successful(self):
-    #     result = self.is_element_present(self._user_icon)
-    #     self.util.sleep(2)
-    #     return result
-
-
-    def verify_login_failed(self):
-        result = self.get_text(self._login_error_message)
-        return result
 
     @allure.step("Verify login error message")
     def verify_login_error_message(self, expected_error_message):
@@ -166,59 +121,5 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         #     return False
         assert actual_error_message == expected_error_message, \
             f">>> Failed Step: actual_message = {actual_error_message}, expected_message = {expected_error_message}"
-
-
-
-    # def verify_login_failed2(self):
-    #     result = self.get_text(self._login_error_message)
-    #     assert result == "Invalid credentialss"
-
-    # def verify_login_title(self):
-
-    # def logout(self):
-
-
-    def clear_fields(self):
-        email_field = self.get_element(self._email_textbox)
-        email_field.clear()
-        password_field = self.get_element(self._password_textbox)
-        password_field.clear()
-
-
-    def verify_login_page_title(self):
-        # time.sleep(2)
-        # if self.get_title() == "OrangeHRM1":
-        #     return True
-        # else:
-        #     return False
-        return self.verify_page_title("OrangeHRM")
-
-
-    @allure.step("Verify login 'hello <user>' message")
-    def verify_login_hello_user_message(self, expected_message):
-        actual_message = self.get_text(self._login_hello_user_message)
-        assert actual_message == expected_message, \
-            f">>> Failed Step: actual_message = {actual_message}, expected_message = {expected_message}"
-
-
-    def verify_login_page_title_v2(self):
-        # time.sleep(2)
-        # if self.get_title() == "OrangeHRM1":
-        #     return True
-        # else:
-        #     return False
-        report = ReportStatus(self.driver)
-        result = self.verify_page_title("OrangeHRM1")
-        print(f">>> RESULT = {result}")
-        report.mark(result, "Page Title Verified")
-
-
-    def verify_user_is_logged_out(self):
-        element = self.wait_for_element(self._login_logo, poll_frequency=1)
-        self.wait_seconds(2)
-        if element is not None:
-            return True
-        else:
-            return False
 
 

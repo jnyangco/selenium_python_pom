@@ -1,4 +1,3 @@
-import allure
 import pytest
 # install "pytest-order" package
 # pages
@@ -14,9 +13,6 @@ log = cl.custom_logger(logging.INFO)
 @pytest.mark.usefixtures("setup")
 class TestLogin:
 
-
-    @allure.title("Test Case: Test Valid Login")
-    # @allure.description("This is to test the valid login functionality")
     @pytest.mark.login
     def test_valid_login(self):
         login_page = LoginPage(self.driver)
@@ -34,8 +30,6 @@ class TestLogin:
         # login_page.wait_seconds(4)
 
 
-    @allure.title("Test Case: Test Invalid Login")
-    # @allure.description("This is to test the invalid login functionality")
     @pytest.mark.login
     def test_invalid_login(self):
         login_page = LoginPage(self.driver)
