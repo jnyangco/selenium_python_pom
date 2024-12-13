@@ -68,7 +68,7 @@ class BasePage:
             # locator_type = locator_type.lower()
             # by_type = self.get_by_type(locator_type)
             element = self.driver.find_element(*locator)
-            # NOTE: * -> is used to unpack the locator values (By.ID, "button[@id='login']
+            # NOTE: * -> is used to unpack the tuple locator values (By.ID, "button[@id='login']
 
             # print("Element found with locator: " +locator + " and locator_type: " +locator_type)
 
