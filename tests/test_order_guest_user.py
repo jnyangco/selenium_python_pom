@@ -11,7 +11,7 @@ import logging
 from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("driver")
 class TestOrderGuestUser:
 
     @allure.title("Test Case: Test Order 'Blue Shoes' using Guest User")

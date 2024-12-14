@@ -35,7 +35,7 @@ def pytest_addoption(parser):
 # @pytest.fixture(scope="class") # default from tutorial
 # @pytest.fixture(scope="function") # when each test in a single python file need to reset setup (i.e: opening browser)
 @pytest.fixture(scope="function")
-def driver(request):  # --browser from command line
+def setup(request):  # --browser from command line
     print("\n========== Run one time setup (conftest.py) ==========")  # before method
 
     # print(f">>> METHOD NAME = {request.node.name}")

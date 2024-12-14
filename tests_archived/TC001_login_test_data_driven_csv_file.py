@@ -9,7 +9,7 @@ from ddt import ddt, data, unpack
 from utils.read_data import read_csv_data
 
 
-@pytest.mark.usefixtures("setup", "method_setup")
+@pytest.mark.usefixtures("driver", "method_setup")
 @ddt
 class LoginTestDataDrivenCSVFile(unittest.TestCase):
 

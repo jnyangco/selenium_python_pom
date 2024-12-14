@@ -9,7 +9,7 @@ from ddt import ddt, data, unpack
 
 
 
-@pytest.mark.usefixtures("setup", "method_setup")
+@pytest.mark.usefixtures("driver", "method_setup")
 @ddt
 class LoginFailedDataDriven(unittest.TestCase):
 

@@ -9,7 +9,7 @@ import logging
 
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("setup", "method_setup")
+@pytest.mark.usefixtures("driver", "method_setup")
 class TestLogin:
 
     # @pytest.mark.login

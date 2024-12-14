@@ -9,7 +9,7 @@ import logging
 
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("driver")
 class TestLoginHeader:
 
     @allure.title("Test Case: Test Login Header")

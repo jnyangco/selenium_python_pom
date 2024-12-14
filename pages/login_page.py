@@ -1,5 +1,6 @@
 import time
 import allure
+import pytest
 from selenium.webdriver.common.by import By
 # from base.selenium_driver import SeleniumDriver
 # -> import this log if you want to print this class "LoginPage" in the logs
@@ -47,6 +48,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         except:
             self.report.mark(False, "Total header elements not matched")
             # self.screenshot(">>> Step Failed - taking screenshot...")
+            # pytest.fail("Total header elements not matched")
 
         try:
             for index, actual_header in enumerate(headers):
@@ -55,6 +57,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         except:
             self.report.mark_final("test_login_headers", False, "Header elements not matched")
             # self.screenshot(">>> Step Failed - taking screenshot...")
+            # pytest.fail("Header elements not matched")
 
     # GET ELEMENT METHODS --------------------------------------------------------------------------------------------
     # No Longer Needed -> since SeleniumDriver class has this functions getting the element

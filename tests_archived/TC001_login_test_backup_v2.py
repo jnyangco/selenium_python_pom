@@ -11,7 +11,7 @@ import utils.custom_logger as cl
 import logging
 
 
-@pytest.mark.usefixtures("setup", "method_setup")
+@pytest.mark.usefixtures("driver", "method_setup")
 class LoginTest(unittest.TestCase):
 
     log = cl.custom_logger(logging.INFO)

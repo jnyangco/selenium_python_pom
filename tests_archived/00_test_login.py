@@ -10,7 +10,7 @@ from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
 # @pytest.mark.usefixtures("onetime_setup", "set_up")
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("driver")
 class TestLogin:
 
     @pytest.mark.login

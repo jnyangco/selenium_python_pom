@@ -11,15 +11,15 @@ from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
 # @pytest.mark.usefixtures("onetime_setup", "set_up")
-@pytest.mark.usefixtures("driver")
+# @pytest.mark.usefixtures("driver")
 class TestLogin:
 
 
     @allure.title("Test Case: Test Valid Login")
     # @allure.description("This is to test the valid login functionality")
     @pytest.mark.login
-    def test_valid_login(self):
-        login_page = LoginPage(self.driver)
+    def test_valid_login(self, driver):
+        login_page = LoginPage(driver)
         util = Util()
 
         # Step 1: Login using valid username and password
@@ -38,8 +38,8 @@ class TestLogin:
     @allure.title("Test Case: Test Invalid Login")
     # @allure.description("This is to test the invalid login functionality")
     @pytest.mark.login
-    def test_invalid_login(self):
-        login_page = LoginPage(self.driver)
+    def test_invalid_login(self, driver):
+        login_page = LoginPage(driver)
 
         # Step 1: Login using invalid username and password
         login_page.open_askomdch()
