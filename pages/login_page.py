@@ -34,13 +34,17 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     _login_headers = (By.XPATH, "(//ul[@id='ast-hf-menu-1'])[1]/li")
     _header_store = (By.XPATH, "//li[@id='menu-item-1227']")
 
+    _cart_total = (By.XPATH, "(//div[@class='ast-cart-menu-wrap']/span)[1]")
+    _cart_icon = (By.XPATH, "(//a[@title='View your shopping cart'])[1]")
+    _count_item_in_cart = (By.XPATH, "//form[@class='woocommerce-cart-form']//tr/td[@class='product-remove']")
+
 
 
     # Actions =========================================================================================================
     @allure.step("Verify login headers are correct")
-    def verify_login_headers(self):
+    def verify_login_headers(self, expected_headers):
         headers = self.get_element_list(self._login_headers)
-        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
+        # expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
 
         try:
             assert len(headers) == len(expected_headers), \
@@ -197,5 +201,9 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
             return True
         else:
             return False
+
+
+
+
 
 

@@ -15,7 +15,7 @@ log = cl.custom_logger(logging.INFO)
 class TestLogin:
 
 
-    @allure.title("Test Case: Test Valid Login")
+    @allure.title("Login: Test Valid Login")
     # @allure.description("This is to test the valid login functionality")
     @pytest.mark.login
     def test_valid_login(self, driver):
@@ -24,7 +24,6 @@ class TestLogin:
 
         # Step 1: Login using valid username and password
         login_page.open_askomdch()
-        # login_page.click_header_menu_account()
         login_page.header.click_header_account()
         username = data("credentials","username")
         password = data("credentials","password")
@@ -35,7 +34,7 @@ class TestLogin:
         # login_page.wait_seconds(4)
 
 
-    @allure.title("Test Case: Test Invalid Login")
+    @allure.title("Login: Test Invalid Login")
     # @allure.description("This is to test the invalid login functionality")
     @pytest.mark.login
     def test_invalid_login(self, driver):
@@ -43,7 +42,6 @@ class TestLogin:
 
         # Step 1: Login using invalid username and password
         login_page.open_askomdch()
-        # login_page.click_header_menu_account()
         login_page.header.click_header_account()
         username = data("credentials","username")
         invalid_password = "Password#387465"

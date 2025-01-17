@@ -49,6 +49,7 @@ class BasePage:
         self.util = Util()
 
 
+
     # positional argument -> by default it will open the base_url
     # if url is provided, it will open the provided url
     def open_url(self, url_path=""):
@@ -143,6 +144,7 @@ class BasePage:
         """
         try:
             element = self.get_element(locator)
+            element.clear()
             element.send_keys(text)
             # print("Send text on element with locator: " + locator + " locator Type: " + locator_type)
             self.log.info("Send text on element with locator: " + str(locator))
@@ -377,5 +379,11 @@ class BasePage:
             time.sleep(sec)
         except InterruptedError:
             traceback.print_stack()
+
+
+    # def get_total_element_from_list_web_elements(self, element):
+    #     wait = WebDriverWait(self.driver, 10)
+    #     total_element = wait.until(EC.visibility_of_all_elements_located(element))
+    #     return len(total_element)
 
 

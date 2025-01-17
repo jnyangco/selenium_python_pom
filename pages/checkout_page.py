@@ -1,5 +1,6 @@
 import time
 import allure
+import pytest
 from selenium.webdriver.common.by import By
 
 from pages.header import Header
@@ -18,6 +19,9 @@ class CheckoutPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.driver = driver
         self.report = ReportStatus(self.driver)
         self.header = Header(self.driver)  # Reuse the Header class
+
+    # Variables
+    is_user_logged_in = False
 
     # Locators
     _checkout_header_label = (By.XPATH, "//h1[text()='Checkout']")
@@ -39,6 +43,8 @@ class CheckoutPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     _email_address_textbox = (By.XPATH, "//input[@id='billing_email']")
     _place_order_button = (By.XPATH, "//button[@id='place_order']")
 
+    _order_confirmation_text = (By.XPATH, "//div[@class='woocommerce-order']/p")
+
 
 
     # ACTION ---------------------------------------------------------------------------------------------------------
@@ -47,7 +53,7 @@ class CheckoutPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
         self.is_element_displayed(self._checkout_header_label)
 
     @allure.step("Fill up checkout page")
-    def guest_fill_up_checkout_page(self, first_name, last_name, country, street_address, city, state, zip_code, email_address):
+    def guest_fill_up_checkout_page(self, first_name, last_name, country, street_address, city, state, zip_code, email_address=""):
         self.send_text(first_name, self._first_name_textbox)
         self.send_text(last_name, self._last_name_textbox)
 
@@ -74,11 +80,19 @@ class CheckoutPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
 
         self.send_text(zip_code, self._zip_code)
 
-        self.send_text(email_address, self._email_address_textbox)
+        if email_address != "":
+            self.send_text(email_address, self._email_address_textbox)
 
     @allure.step("Click place order button")
     def click_place_order(self):
         self.element_click(self._place_order_button)
+
+
+    @allure.step("Verify order confirmation text")
+    def verify_order_confirmation_text(self, expected_text):
+        actual_text = self.get_text(self._order_confirmation_text)
+        assert actual_text == expected_text, pytest.fail(f"FAILED: Incorrect order confirmation text."
+                                                         f"Expected = {expected_text}, Actual = {actual_text}")
 
 
 

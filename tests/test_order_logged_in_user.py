@@ -14,16 +14,22 @@ from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
 # @pytest.mark.usefixtures("driver")
-class TestOrderGuestUser:
+class TestOrderLoggedInUser:
 
-    @allure.title("Order: Test Order 'Blue Shoes' using Guest User")
+    @allure.title("Order: Test Order 'Blue Shoes' using Logged In User")
     @pytest.mark.checkout
-    def test_order_blue_shoes_guest_user(self, driver):
+    def test_order_red_shoes_logged_in_user(self, driver):
         login_page = LoginPage(driver)
         util = Util()
 
         # Step 1: Login using valid username and password
         login_page.open_askomdch()
+        login_page.header.click_header_account()
+        username = data("credentials","username")
+        password = data("credentials","password")
+        login_page.login(username, password)
+
+        # Clear Order:
 
         # Step 2: Click header store
         login_page.header.click_header_store()
@@ -48,16 +54,17 @@ class TestOrderGuestUser:
         # Step 7: Verify user is redirected to Checkout page
         checkout_page = CheckoutPage(self.driver)
         checkout_page.verify_checkout_page()
+        time.sleep(2)
 
         # Step 8: Fillup checkout page
         checkout_page.guest_fill_up_checkout_page("Fname", "Lname", "United States",
                                                   "123 Test Address", "Test City", "New York",
-                                                  "12345", "guest_user1@test.com")
-        checkout_page.wait_seconds(2)
+                                                  "12345")
+        checkout_page.wait_seconds(20)
 
         # Step 9: Click place order button
         checkout_page.click_place_order()
-        checkout_page.wait_seconds(2)
+        checkout_page.wait_seconds(5)
 
         # Step 10: Verify order confirmation text
         checkout_page.verify_order_confirmation_text("Thank you. Your order has been received.")
