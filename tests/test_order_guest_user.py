@@ -11,13 +11,13 @@ import logging
 from utils.config_reader import read_config as data
 log = cl.custom_logger(logging.INFO)
 
-@pytest.mark.usefixtures("driver")
+# @pytest.mark.usefixtures("driver")
 class TestOrderGuestUser:
 
     @allure.title("Test Case: Test Order 'Blue Shoes' using Guest User")
     @pytest.mark.checkout
-    def test_order_guest_user(self):
-        login_page = LoginPage(self.driver)
+    def test_order_guest_user(self, driver):
+        login_page = LoginPage(driver)
         util = Util()
 
         # Step 1: Login using valid username and password

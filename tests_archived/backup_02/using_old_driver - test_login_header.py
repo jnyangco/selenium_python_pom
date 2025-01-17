@@ -9,13 +9,13 @@ import logging
 
 log = cl.custom_logger(logging.INFO)
 
-# @pytest.mark.usefixtures("driver")
+@pytest.mark.usefixtures("driver")
 class TestLoginHeader:
 
     @allure.title("Test Case: Test Login Header")
     @pytest.mark.header
-    def test_login_header(self, driver):
-        login_page = LoginPage(driver)
+    def test_login_header(self):
+        login_page = LoginPage(self.driver)
 
         # Step 1: Validate header text are correct
         # Expected List = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]

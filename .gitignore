@@ -4,6 +4,9 @@
 # IDE Specific
 .DS_Store
 
+# File
+automation.log
+
 # Pycharm Cache
 base/__pycache__/
 pages/__pycache__/
