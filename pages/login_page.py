@@ -40,7 +40,7 @@ class LoginPage(BasePage): # inherit BasePage -> which inherit SeleniumDriver
     @allure.step("Verify login headers are correct")
     def verify_login_headers(self):
         headers = self.get_element_list(self._login_headers)
-        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Us"]
+        expected_headers = ["Home", "Store", "Men", "Women", "Accessories", "Account", "About", "Contact Uss"]
 
         try:
             assert len(headers) == len(expected_headers), \
